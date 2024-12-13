@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ''
-email: 
+title: 'cthomas-bio'
+email: 'cthomas2416@gmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  I have lots of interests and have developed expertise in quantum physics and machine learning. 
+  I have lots of interests and expertise in quantum physics and machine learning. 
 # twitter_username: username
 github_username: cthomas-ml
 minimal_mistakes_skin: default
@@ -63,7 +63,7 @@ author:
   links:
     - label: "Resume"
       icon: "fas fa-fw fa-download"
-      url: "./assets/files/CThomas_2024.pdf"
+      url: "/assets/files/CThomas_2024.pdf"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/c-thomas-16694977/"
