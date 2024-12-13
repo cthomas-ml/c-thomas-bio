@@ -1,7 +1,7 @@
 ---
 title: "Mitigating LLM Sycophancy"
 categories:
-  - AI
+  - Artificial Intelligence
 tags:
   - Alignment
   - Safety
@@ -10,7 +10,7 @@ toc_sticky: true
 ---
 
 <figure style='display: table'>
-  <img src="/assets/images/Chatbot.png" alt="Sycophants are easily manipulated.">
+  <img src="{{site.baseurl}}/assets/images/Chatbot.png" alt="Sycophants are easily manipulated.">
   <figcaption style='display: table-caption; caption-side: bottom;'>
   A sycophantic AI is easily manipulated by the user to give an incorrect response.</figcaption>
 </figure>
