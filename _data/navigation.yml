@@ -3,6 +3,8 @@ main:
     url: /#top
   - title: "Research"
     url: /#research
+  - title: "Self-Defense"
+    url: /#self-defense
   # - title: "Publications"
   #   url: /#publications
   # - title: "Career"
@@ -15,5 +17,3 @@ main:
     url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  - title: "Self-Defense"
-    url: /impact/

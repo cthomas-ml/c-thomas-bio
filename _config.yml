@@ -63,7 +63,7 @@ author:
   links:
     - label: "Resume"
       icon: "fas fa-fw fa-download"
-      url: "/resume/"
+      url: "{{site.baseurl}}/resume/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/c-thomas-16694977/"

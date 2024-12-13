@@ -20,6 +20,8 @@ toc_sticky: true
 
 ## Overview
 
+*This is the first of a two-part series of posts on LLM sycophancy, find higher-level analysis and mitigation techniques [in the next post]({{site.baseurl}}/artificial%20intelligence/sycophancy).*
+
 Sycophancy is the tendency to agree with a statement even when you don't think that it's true.  As people in a social society, we don't always choose to voice our disagreements. We decide whether or not to be agreeable based on factors like our audience, comfort-level, and readiness to engage. We consider the context and decide whether to agree or engage, and we expect others to do the same.
 
 We would not expect Wikipedia to exhibit sycophancy. When we turn to online sources or virtual assistants with a question, we reasonably expect a response that is accurate and consistent with the response that a friend would receive. Today's Large Language Models do not meet this expectation. 
@@ -28,7 +30,8 @@ In this post I dig into the nature of LLM sycophancy. I aim to understand scenar
 Or you can follow along with the code below.  Adjust the prompts and test with new models and datasets to see if you can find more interesting patterns. 
 
 
-### Contributions 
+### In this post
+
 - Step through a demonstration of sycophancy in the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model. 
 - Demonstrate that sycophancy is highly sensitive to the specifics of prompt manipulation, the model output type (multiple choice vs. freeform), and the dataset. In a future post, I will show how these sensitivities inhibit sycophancy mitigation techniques that rely on prompt manipulation.
 
@@ -42,7 +45,14 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 ```
 
+### Generate synthetic data
+
+This post uses datasets generated following the [synthetic data github repo](https://github.com/google/sycophancy-intervention), as well as an open-source dataset of product reviews.  
+
 ### Load models
+
+I'll use the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model, but you can try it out with any models from huggingface. 
+
 
 ```python
 cache_dir = "models"
@@ -58,7 +68,7 @@ def load_pickle(filename: str):
   with open(filename, 'rb') as file:
     return pickle.load(file)
 
-# load the opinionated datasets: 
+# load the synthetically generated datasets: 
 test_path = 'data/generated-synthetic/synthetic_eval_opinionTrue_2500'
 trainset_path = 'data/generated-synthetic/updated_synthetic_train_train_op21970'
 ds_test = load_pickle(test_path)

@@ -62,7 +62,7 @@ I was an organizer and panelist for the [2024 vision workshop at ECCV](https://v
 Research in [AI Alignment](https://aisafetyfundamentals.com/blog/what-is-ai-alignment/) and Safety aims to align AI with human values. 
 <!-- The field faces practical, political and technical barriers.  -->
 Today my interest centers on aligning model behavior with creator intent -- a necessary but insufficient requirement for reliable AI safety. 
-<!-- how --> This involves [probing existing AI models](/ai/sycophancynb) to understand their inner representations and learning processes, while simultaneously pursuing more [sophisticated training strategies](). By examining how models learn, interpret, and generate responses, we might improve model understanding while reducing dependence on enormous and potentially flawed datasets.
+<!-- how --> This involves [probing existing AI models](/artificial%20intelligence/sycophancynb) to understand their inner representations and learning processes, and pursuing more [sophisticated training strategies](). By examining how models learn, interpret, and generate responses, we might improve model understanding while reducing dependence on enormous and potentially flawed datasets.
 
 ### Physics and Quantum Computing
 
@@ -72,7 +72,7 @@ Today my interest centers on aligning model behavior with creator intent -- a ne
 I earned my PhD in Atomic Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), for which I was awarded the [DOE SCGF](https://science.osti.gov/wdts/scgf) and [NSF GRFP](https://www.nsfgrfp.org) fellowships. Driven to understand quantum systems and the laws that underpin our physical universe, I studied macroscopic quantum states of matter called Bose-Einstein Condensates (BECs) in highly-controlled and well-understood environments. 
 Together with my team, I built laser and high-vacuum systems to create, manipulate, and image the quantum wavefunctions of BECs and study how complex properties of real materials emerge. Find an accessible explanation in the first chapter of my dissertation. Based on this research I was recognized as one of [Scientific American's 30 under 30](https://www.scientificamerican.com/article/lindau-claire-thomas/). 
 
-<img src="./assets/images/qc.jpeg" style="float: left; padding-right: 10px;" width="25%" height="auto"> 
+<img src="./assets/images/qc.jpeg" style="float: left; padding-right: 10px; padding-bottom: 30px;" width="25%" height="auto"> 
 
 I went on to work as a tech lead at [Rigetti Quantum Computing](https://www.rigetti.com/). My work focused on rooting out decoherence sources at interfaces throughout the quantum stack -- from fabrication of superconducting qubit systems, through cryogeneic, electrical, RF, hardware, and software systems.  
 
@@ -91,4 +91,11 @@ More quantum phrases
 
 
 ## Career Notes -->
-  
+
+<br>
+<br>
+
+
+## Self-Defense
+
+I am a longtime volunteer instructor and recent board member at [Impact Bay Area](https://www.impactbayarea.org/), where we train students to set and hold  boundaries with verbal and physical self-defense skills.  Take a class! 
