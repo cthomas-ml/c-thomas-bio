@@ -1,9 +1,19 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
+  - title: "Home"
+    url: /#top
+  - title: "Research"
+    url: /#research
+  # - title: "Publications"
+  #   url: /#publications
+  # - title: "Career"
+  #   url: /#career
+  # - title: "Resources"
+  #   url: /resources/
+  # - title: "Posts"
+  #   url: /posts/
+  - title: "Blog"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  # - title: "Tags"
+  #   url: /tags/
+  - title: "Self-Defense"
+    url: /impact/
