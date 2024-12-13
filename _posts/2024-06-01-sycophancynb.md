@@ -13,7 +13,7 @@ toc_sticky: true
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/Chatbot.png" alt="Sycophants are easily manipulated.">
   <figcaption style='display: table-caption; caption-side: bottom;'>
-  A sycophantic AI is easily manipulated by the user to give an incorrect response.</figcaption>
+  A sycophantic AI is easily manipulated by the user to give an incorrect response. The model provides the correct answer to a neutral prompt, but prioritizes agreement over correctness when the prompt contains an incorrect opinion.  </figcaption>
 </figure>
 
 

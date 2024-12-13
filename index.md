@@ -12,7 +12,7 @@ alt="After a successful workshop at ECCV, 2024."
 width="400"> -->
 
 
-<img src="./assets/images/after-eccv.jpeg" alt="After a successful workshop at ECCV, 2024." style="float: right; padding-left: 20px; padding-top: 90px;" width="400" >
+<img src="./assets/images/after-eccv.jpeg" alt="After a successful workshop at ECCV, 2024." style="float: right; padding-left: 20px; padding-top: 90px;"  width="50%" height="auto">
 
 ## Bio
 
@@ -40,7 +40,7 @@ I am broadly driven to understand the world and to leverage that understanding t
 ### AI in Manufacturing
 <!-- why - how - what -->
 
-<img src="./assets/images/manufacturing.jpg" style="float: left; padding-right: 20px; padding-top: 20px;" width="400" >
+<img src="./assets/images/manufacturing.jpg" style="float: left; padding-right: 20px; padding-top: 20px;"  width="50%" height="auto">
 
 <!-- Why is this important / why is it interesting / why is it hard ?   -->
 Successful applications of ML in manufacturing can reduce waste at a global scale while improving the quality of products produced. However, success requires exceptionally high model accuracy on data with low-diversity, a scenario that promotes model memorization and limits adaptability. 
@@ -67,12 +67,12 @@ Today my interest centers on aligning model behavior with creator intent -- a ne
 ### Physics and Quantum Computing
 
 
-<img src="./assets/images/optical-table.jpeg" style="float: right; padding-left: 10px; padding-top:10px" width="400" >
+<img src="./assets/images/optical-table.jpeg" style="float: right; padding-left: 10px; padding-top:10px" width="50%" height="auto">
 
 I earned my PhD in Atomic Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), for which I was awarded the [DOE SCGF](https://science.osti.gov/wdts/scgf) and [NSF GRFP](https://www.nsfgrfp.org) fellowships. Driven to understand quantum systems and the laws that underpin our physical universe, I studied macroscopic quantum states of matter called Bose-Einstein Condensates (BECs) in highly-controlled and well-understood environments. 
-Together with my team, I built laser and high-vacuum systems to create, manipulate, <img src="./assets/images/qc.jpeg" style="float: right; padding-left: 10px;" width="200" > and image the quantum wavefunctions of BECs and study how complex properties of real materials emerge. Find an accessible explanation in the first chapter of my dissertation. Based on this research I was recognized as one of [Scientific American's 30 under 30](https://www.scientificamerican.com/article/lindau-claire-thomas/). 
+Together with my team, I built laser and high-vacuum systems to create, manipulate, and image the quantum wavefunctions of BECs and study how complex properties of real materials emerge. Find an accessible explanation in the first chapter of my dissertation. Based on this research I was recognized as one of [Scientific American's 30 under 30](https://www.scientificamerican.com/article/lindau-claire-thomas/). 
 
-
+<img src="./assets/images/qc.jpeg" style="float: left; padding-right: 10px;" width="25%" height="auto"> 
 
 I went on to work as a tech lead at [Rigetti Quantum Computing](https://www.rigetti.com/). My work focused on rooting out decoherence sources at interfaces throughout the quantum stack -- from fabrication of superconducting qubit systems, through cryogeneic, electrical, RF, hardware, and software systems.  
 
