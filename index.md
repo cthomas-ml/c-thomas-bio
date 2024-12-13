@@ -62,7 +62,7 @@ I was an organizer and panelist for the [2024 vision workshop at ECCV](https://v
 Research in [AI Alignment](https://aisafetyfundamentals.com/blog/what-is-ai-alignment/) and Safety aims to align AI with human values. 
 <!-- The field faces practical, political and technical barriers.  -->
 Today my interest centers on aligning model behavior with creator intent -- a necessary but insufficient requirement for reliable AI safety. 
-<!-- how --> This involves [probing existing AI models]() to understand their inner representations and learning processes, while simultaneously pursuing more [sophisticated training strategies](). By examining how models learn, interpret, and generate responses, we might improve model understanding while reducing dependence on enormous and potentially flawed datasets.
+<!-- how --> This involves [probing existing AI models](/ai/sycophancynb) to understand their inner representations and learning processes, while simultaneously pursuing more [sophisticated training strategies](). By examining how models learn, interpret, and generate responses, we might improve model understanding while reducing dependence on enormous and potentially flawed datasets.
 
 ### Physics and Quantum Computing
 
