@@ -1,5 +1,5 @@
 ---
-title: "Dictionary Learning and Image Models"
+title: "Interpreting image models with sparse dictionary learning: a case for hierarchical learning"
 categories:
   - Artificial Intelligence
 tags:

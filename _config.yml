@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "C Thomas, PhD"
-  avatar : "/assets/images/cthomas-photo.jpg"
+  avatar : "/assets/images/cthomas-photo.png"
   bio    : "Physicist, ML Engineer, technical manager, self-defense teacher."
   links:
     - label: "Resume"
