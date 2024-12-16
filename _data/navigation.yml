@@ -3,10 +3,10 @@ main:
     url: /#top
   - title: "Research"
     url: /#research
+  - title: "Publications"
+    url: /#selected-publications
   - title: "Self-Defense"
     url: /#self-defense
-  # - title: "Publications"
-  #   url: /#publications
   # - title: "Career"
   #   url: /#career
   # - title: "Resources"

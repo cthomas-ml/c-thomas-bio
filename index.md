@@ -58,7 +58,7 @@ My team's recent research leverages self-supervised pretraining and [language-gu
 I was an organizer and panelist for the [2024 vision workshop at ECCV](https://vision-based-industrial-inspection.github.io/eccv-24/).
 
 
-### AI Interpretability and Alignment
+### Interpretability, Alignment and Control of AI
 
 <!-- why -->
 <!-- Today's large models require extremely large datasets, delivered by scraping the whole internet (not humanity’s proudest collection of thoughts). Their predecessors - models that determine what we see on social media, for example - we know can be bad for democracy, teen mental health, and social equity.  -->
@@ -89,14 +89,42 @@ More quantum phrases
  studied quantum physics at macroscpic scales 
 -->
 
-<!-- ## Publications
+<div style="page-break-after: always; visibility: hidden"> 
+\pagebreak 
+</div>
 
+## Selected Publications
 
+<small>
+[LangDA: Language-guided Domain Adaptive Semantic Segmentation](https://openreview.net/forum?id=iyULilaeYx) 
+Chang Liu, Saad Hossain, C Thomas, Kwei-Herng Lai, Raviteja Vemulapalli, Sirisha Rambhatla, Alexander Wong. 
+*NeurIPS 2024, AFM workshop,*
+Nov 2024.
+</small>
 
-## Career Notes -->
+<small>
+[Synth4Seg–Learning Defect Data Synthesis for Defect Segmentation using Bi-level Optimization](https://arxiv.org/abs/2410.18490)
+Shancong Mou, Raviteja Vemulapalli, Shiyu Li, Yuxuan Liu, C Thomas, Meng Cao Haoping Bai, Oncel Tuzel, Ping Huang, Jiulong Shan, Jianjun Shi. 
+*arXiv:2410.18490,*
+Oct 2024.
+</small>
 
-<br>
-<br>
+<small>
+[Mean-field scaling of the superfluid to Mott insulator phase transition
+in a 2D optical superlattice](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.100402) 
+CK Thomas, Thomas H Barter, Tsz-Him Leung, Masayuki Okano, Gyu-Boong Jo, Jennie Guzman, Itamar Kimchi, Ashvin Vishwanath, Dan Stamper-Kurn 
+*Physical Review Letters 119 (10), 100402 (Editor’s Suggestion),*
+Sept 2017.
+</small>
+
+<small>
+[Signatures of spatial inversion asymmetry of an optical lattice observed in matter-wave diffraction](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.063613)
+CK Thomas, TH Barter, TH Leung, S Daiss, DM Stamper-Kurn. 
+*Physical Review A 93 (6), 063613,*
+June 2016.
+</small>
+
+<!-- ## Career Notes --> 
 
 
 ## Self-Defense
