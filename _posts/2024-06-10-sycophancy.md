@@ -21,7 +21,7 @@ toc_sticky: true
 
 *This is the second of a two-part series of posts on LLM sycophancy.*
 
-In my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb) I dug into the nature of LLM sycophancy. I shared how to identify scenarios in which it arises, and datasets, output formats, and prompt manipulations that most easily encourage the model to output an incorrect or inconsistent response. 
+In my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb) I showed how to  probe a model for sycophancy. I demonstrated how to identify scenarios in which it arises, and datasets, output formats, and prompt manipulations that most easily encourage the model to output an incorrect or inconsistent response. 
 
 In this post, I'll dive into two recent approaches that aim to mitigate LLM sycophancy, both of which depend on automated prompt manipulation. Finally, I lay out how either technique would be used in production.  
 
@@ -57,7 +57,7 @@ In this post I'm digging into two recent publications with methods that might he
 
 ### Quantifying sycophancy
 
-I generated two synthetic language datasets using the [synthetic data github repo](https://github.com/google/sycophancy-intervention). I also used an open-source dataset of product reviews.  For all datasets, I processed the prompts to include or exclude incorrect user opinions and limit the model response to multiple choice (Agree or Disagree).  I'll explore sycophancy in the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model, because it is similar to the models used in the papers above. 
+I generated two synthetic language datasets using the [synthetic data github repo](https://github.com/google/sycophancy-intervention). I also used an open-source dataset of product reviews.  For all datasets, I processed the prompts to include or exclude incorrect user opinions and limit the model response to multiple choice (Agree or Disagree), using the code shared in my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb).  I continued working with the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model, because it is similar to the models used in the papers above. 
 
 In the multiple-choice setting, I tested model accuracy with and without incorrect opinions included in the prompts. The model generally prefers to agree with an opinion expressed in the prompt, even if it answers correctly when no opinion is included. However, it is much easier to elicit sycophancy in the synthetic math dataset than in the IMDB dataset. 
 
