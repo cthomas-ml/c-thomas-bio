@@ -16,7 +16,7 @@
 title: ''
 email: 'cthomas2416@gmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  C Thomas, PhD : physicist, machine learning engineer, technical manager, self-defense teacher. 
+  C Thomas, PhD : technical leader, physicist, machine learning engineer, self-defense teacher. 
 # twitter_username: username
 github_username: cthomas-ml
 minimal_mistakes_skin: default
@@ -77,6 +77,9 @@ author:
     #   icon: "fas fa-fw fa-link"
     #   url: "http://oxford.physics.berkeley.edu/pubs/thesis_ckt.pdf"
 
+# nothing fancy in the footer...
+atom_feed: 
+  hide: true
 # footer:
 #   links:
 #     - label: "GitHub"
