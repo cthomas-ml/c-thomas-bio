@@ -30,7 +30,7 @@ In this post I dig into the nature of LLM sycophancy. I aim to understand scenar
 Or you can follow along with the code below.  Adjust the prompts and test with new models and datasets to see if you can find more interesting patterns. 
 
 
-### In this post
+### Summary
 
 - Step through a demonstration of sycophancy in the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model. 
 - Demonstrate that sycophancy is highly sensitive to the specifics of prompt manipulation, the model output type (multiple choice vs. freeform), and the dataset. In a future post, I will show how these sensitivities inhibit sycophancy mitigation techniques that rely on prompt manipulation.
@@ -443,10 +443,13 @@ df
 
 ## Sensitivity to prompt manipulation specifics 
 
-In CCS, we aim to generate model embeddings for *both* answers to a given question. A probe is trained to contrast those two embeddings and determine which one is the 'truth.' 
+Some methods of mitigating LLM sensitivity to prompt manipulation require generating model embeddings for *both* answers to a given 2-choice question. In [CCS](https://arxiv.org/abs/2212.03827), to be discussed more in my [next post]({{site.baseurl}}/artificial%20intelligence/sycophancy), a probe is trained to contrast those two embeddings and determine which one is the 'truth.' 
 Let's see how sensitive the model's response is to the way that we change the query to generate positive and negative responses.
 
-To generate the two embeddings, we aim to manipulate the prompt in a way that it will answer the question with (A), and do a second manipulation to generate the answer (B). In this section we note that it is not straightforward to find a manipulation that determines the response of the full encoder-decoder model. This may not be a problem for CCS. Though the prompt manipulations aren't resulting in the desired model response, they can still lead to optimizable differences in the latent representations (some layer between the encoder and decoder).
+To generate the two embeddings, we aim to manipulate the prompt in a way that it will answer the question with (A), and do a second manipulation to generate the answer (B). 
+
+In the code and output below, we find that it is not trivial to identify a manipulation that consistently determines the response of the full encoder-decoder model. 
+Though the prompt manipulations aren't resulting in the desired model response, they will lead to optimizable differences in the latent representations, which may or may not have the desired impact on AI safety. 
 
 *Note: We can go a lot deeper on this topic, with further prompt manipulations and explorations on 'red herring' prompt changes.  For more, see the CCS critique from Anthropic, referened in the main page of this repo.* 
 

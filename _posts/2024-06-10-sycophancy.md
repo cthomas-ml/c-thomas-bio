@@ -26,7 +26,7 @@ In my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb) I sho
 In this post, I'll dive into two recent approaches that aim to mitigate LLM sycophancy, both of which depend on automated prompt manipulation. Finally, I lay out how either technique would be used in production.  
 
 
-### In this post  
+### Summary 
 
 - Compare two recent methods to address sycophantic behavior in LLMs : 
 [Simple synthetic data reduces sycophancy in large language models](https://arxiv.org/abs/2308.03958) involves generating randomly (in)correct opinionated prompts for model finetuning.
@@ -46,7 +46,7 @@ In this post, I'll dive into two recent approaches that aim to mitigate LLM syco
 
 ### Approaches
 
-In this post I'm digging into two recent publications with methods that might help reduce large language model sycophancy. The first is [Simple synthetic data reduces sycophancy in large language models](https://arxiv.org/abs/2308.03958), and the second is [Discovering Latent Knowledge in Language Models Without Supervision](https://arxiv.org/abs/2212.03827).  Both papers link to GitHub repos that were used heavily in this study, and I provide a high-level summary in the Approaches section in the sidebar.
+I will dig into two recent publications of methods that might help reduce large language model sycophancy. The first is [Simple synthetic data reduces sycophancy in large language models](https://arxiv.org/abs/2308.03958), and the second is [Discovering Latent Knowledge in Language Models Without Supervision](https://arxiv.org/abs/2212.03827).  Both papers link to GitHub repos that were used heavily in this study, and I provide a high-level summary in the Approaches section in the sidebar.
 
 [Simple synthetic data reduces sycophancy in large language models](https://arxiv.org/abs/2308.03958), from Google DeepMind in Feb, 2024, shows that as models grow larger, they exhibit increasing tendency to agree with an incorrect prompt despite knowledge of the correct response. The paper addresses this sycophancy with supervised fine-tuning on lots of generated data in which the prompt correctness is random but the ground-truth is accurate, effectively training the model to ignore extraneous information provided in a prompt and provide a known, correct answer. The paper demonstrates that they can improve model accuracy on prompts similar to those used in fine-tuning. The approach requires the engineers to (1) know what types of prompts to protect against, and (2) generate significant volumes of training data to combat each type.
 
@@ -57,7 +57,7 @@ In this post I'm digging into two recent publications with methods that might he
 
 ### Quantifying sycophancy
 
-I generated two synthetic language datasets using the [synthetic data github repo](https://github.com/google/sycophancy-intervention). I also used an open-source dataset of product reviews.  For all datasets, I processed the prompts to include or exclude incorrect user opinions and limit the model response to multiple choice (Agree or Disagree), using the code shared in my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb).  I continued working with the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model, because it is similar to the models used in the papers above. 
+My [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb) starts with a definition and simple exploration of sycophancy in LLMs. Going deeper, I generated two synthetic language datasets using the [synthetic data github repo](https://github.com/google/sycophancy-intervention). I also used an open-source dataset of product reviews.  For all datasets, I processed the prompts to include or exclude incorrect user opinions and limit the model response to multiple choice (Agree or Disagree), using the code shared in my [last post]({{site.baseurl}}/artificial%20intelligence/sycophancynb).  I continued working with the [google/flan-t5-xxl](https://huggingface.co/google/flan-t5-xxl) model, because it is similar to the models used in the papers above. 
 
 In the multiple-choice setting, I tested model accuracy with and without incorrect opinions included in the prompts. The model generally prefers to agree with an opinion expressed in the prompt, even if it answers correctly when no opinion is included. However, it is much easier to elicit sycophancy in the synthetic math dataset than in the IMDB dataset. 
 

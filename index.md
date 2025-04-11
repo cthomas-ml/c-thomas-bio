@@ -17,10 +17,10 @@ width="400"> -->
 ## Bio
 
 
-I lead a machine learning team at [Apple](https://www.apple.com/newsroom/) that translates advances in research to applications in manufacturing. In my present role, my applied research focuses on continual learning, domain generalization, and data-efficient machine learning. I am also interested in interpretability and improving control and safety in large language and multimodal models.
+I lead a machine learning team at [Apple](https://www.apple.com/newsroom/) that translates advances in research to applications in manufacturing. In my present role, my applied research focuses on  domain adaptation and data-efficient machine learning. I am also interested in interpretability and improving control and safety in large language and multimodal models.
 
 <!-- why - how - what -->
-I have a PhD in Atomic, Molecular and Optical Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), and professional experience as a machine learning engineer, quantum engineer and startup founder. When I'm not working to understand our world or become a better manager, I enjoy woodworking, cycling, and hiking with my wife and dog. I am also a board member and volunteer assistant instructor at [Impact Bay Area](https://www.impactbayarea.org/cthomas), where we teach self-defense under adrenaline. 
+I have a PhD in Atomic, Molecular and Optical Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), and professional experience as a technical leader, machine learning engineer, quantum engineer and startup founder. When I'm not working to understand our world or become a better manager, I enjoy woodworking, cycling, and hiking with my wife and dog. I am also a board member and volunteer assistant instructor at [Impact Bay Area](https://www.impactbayarea.org/cthomas), where we teach self-defense under adrenaline. 
 
 
 
@@ -33,12 +33,12 @@ I am interested in applying and adapting cutting-edge approaches in artificial i
 <!-- A common thread across my AI research is data-efficiency - reducing the number of data samples required to train an effective model.  -->
 <!-- Data-efficiency, reducing the number of data samples required to train an effective model, is a common thread throughout my work. Today's models require massive volumes of diverse training data. 
  Domain-specific datasets differ meaningfully from the natural images used in traditional machine learning and  -->
-My work in physics also encompassed both applications in quantum computing and fundamental research to improve our understanding of quantum mechanics. 
+My work in physics also encompassed both applications in quantum computing and fundamental research into the nature of quantum mechanics. 
 
 <!-- why - understand and discover, and build something impactful or helpful
 how - curiosity, developing broad expertise, find underlying commonalities across fields 
 what - physics, engineering and machine learning -->
-<!-- I am broadly driven to understand the world and to leverage that understanding to build something impactful and new. Thus far in my career I've taken that lens in physics, engineering and machine learning.  -->
+<!-- I am broadly driven to understand the world and to leverage that understanding to build something impactful and new. Thus far in my career I've applied that lens in physics, engineering and machine learning.  -->
 
 ### Artificial Intelligence in Manufacturing
 <!-- why - how - what -->
@@ -46,7 +46,7 @@ what - physics, engineering and machine learning -->
 <img src="./assets/images/manufacturing.png" style="float: left; padding-right: 20px; padding-top: 20px;"  width="50%" height="auto">
 
 <!-- Why is this important / why is it interesting / why is it hard ?   -->
-Successful applications of ML in manufacturing can reduce waste at a global scale while improving the quality of products produced. However, success is defined by exceptionally high model accuracy on data with low-diversity, a scenario that promotes model memorization and limits adaptability. 
+Successful applications of ML in manufacturing can reduce waste at a global scale while improving the quality of products produced. However, success in manufacturing requires exceptionally high model accuracy on data with low-diversity, a scenario that promotes model memorization and limits adaptability. 
 
 
 <!-- how do we work  -->
@@ -55,18 +55,17 @@ Successful applications of ML in manufacturing can reduce waste at a global scal
 <!-- what have we built -->
 
 My team's recent research leverages self-supervised pretraining and language-guided domain adaptation to reduce the volume of annotated device-specific data required to produce an effective model. 
-I was an organizer and panelist for the [2024 vision workshop at ECCV](https://vision-based-industrial-inspection.github.io/eccv-24/).
+I was an organizer and panelist for the [2024 VISION workshop at ECCV](https://vision-based-industrial-inspection.github.io/eccv-24/), which brought together an international community of researchers to tackle key challenges in Vision-based Industrial Inspection. 
 
 
 ### Interpretability, Alignment and Control of AI
-
+<!-- AI Reasoning, Interpretability and Alignment -->
 <!-- why -->
 <!-- Today's large models require extremely large datasets, delivered by scraping the whole internet (not humanity’s proudest collection of thoughts). Their predecessors - models that determine what we see on social media, for example - we know can be bad for democracy, teen mental health, and social equity.  -->
-With the rise of generative artificial intelligence, I have become increasingly focused on methods to assess and improve alignment of model behavior with creator intent. This is a necessary but insufficient requirement for AI Safety, which concerns the alignment of AI with human values. 
-<!-- The field faces practical, political and technical barriers.  -->
-<!-- Today my interest centers on aligning model behavior with creator intent -- a necessary but insufficient requirement for reliable AI safety.  -->
-<!-- how --> My work involves [probing existing AI models](./artificial%20intelligence/sycophancy) to understand their inner representations and learning processes, and the pursuit of more [sophisticated training strategies](./artificial%20intelligence/hierarchical) that might improve model understanding while reducing the quantity of necessary training data. 
-<!-- By examining how models learn, interpret, and generate responses, we might improve model understanding while reducing dependence on enormous and potentially flawed datasets. -->
+With the rise of generative artificial intelligence, I have become increasingly interested in methods to assess and improve alignment of model behavior with creator intent. This is a necessary but insufficient requirement for AI Safety, which concerns the alignment of AI with human values. 
+
+<!-- how -->  I have written about [probing existing AI models](./artificial%20intelligence/sycophancy) to understand their inner representations and learning processes, and the pursuit of training strategies to improve [vision model understanding](./artificial%20intelligence/hierarchical), so that learned concepts can be clearly identified and controlled. 
+<!--By examining how models learn, interpret, and generate responses, we can improve model understanding, illuminate clear control parameters, and reduce model dependence on enormous and flawed datasets. -->
 
 ### Physics and Quantum Computing
 
