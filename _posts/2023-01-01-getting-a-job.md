@@ -1,12 +1,12 @@
 ---
-title: "Getting a job"
+title: "Getting a job in a new field"
 categories:
   - Career
 tags:
   - advice 
 ---
 
-Here is all my advice about getting a job, particularly if you are coming from academia or switching fields. If you are considering a career change, I like to recommend this little book called [A job to love](https://bookshop.org/p/books/a-job-to-love-a-practical-guide-to-finding-fulfilling-work-by-better-understanding-yourself-the-school-of-life/6566657?ean=9780993538759&next=t).
+Here is all my advice about getting a job, particularly if you are coming from academia or switching fields. If you are considering a career change, I recommend this little book called [A job to love](https://bookshop.org/p/books/a-job-to-love-a-practical-guide-to-finding-fulfilling-work-by-better-understanding-yourself-the-school-of-life/6566657?ean=9780993538759&next=t).
 
 Finding a great job is a long journey, and interviewing for prolonged periods of time can be demoralizing. Find ways to reset that will keep you sane. When I am going through this process, I find it helpful to re-read a book called [Mindset](https://bookshop.org/p/books/mindset-the-new-psychology-of-success-carol-s-dweck/7841782?ean=9780345472328&next=t), by Carol Dweck. 
 
@@ -25,29 +25,45 @@ Create a spreadsheet that lists the companies you are interested in, whether you
 
 Second order LinkedIn connections that go through a close connection of yours (eg. a former colleague who knows you well, or a close friend and collaborator) may be more useful than a first-order connection that you do not know very well. 
 
-For each role or company, choose the most relevant referral that you can. When you reach out to your connections, ask them for a specific action. You can link the JD that you're interested in, and/or ask if they know anyone on that team and whether they'd be comfortable connecting you for an informational interview.  
+## Informational interviews and referrals
+
+When I talk about referrals, I am **not** talking about a company's official referral system, in which a current employee enters your name, information, and the role IDs you are interested in. Through this system, your gets be entered into the pool of applicants to be screened by a recruiter.  It works best for folks who already have a large network and track record related to the job they want.  
+
+If you are coming from academia, a new field, or just don't have a huge network yet, you will have to work a bit harder to get a useful referral. I recommend reaching out to the best connection you can and requesting an informal conversation or informational interview about what it's like working at that company, or in that role. 
+
+### The How and Who of referral requests
+
+Start with who you know. Go back to your spreadsheet of interesting roles or companies and your relevant LinkedIn connections. 
+
+Your goal is to get on the phone with the most relevant possible people to the roles and companies of interest. Remember, this might be a second-order connection, in which case you need to start by asking your first-order connection if they know the person well enough to introduce you. You may not be able to find someone for every company on the list, but you should be able to have a few interesting conversations.
+
+The phone call is an informational interview, or an informal conversation with people familiar with the role or team that you are interested in. You should prepare questions about the role that are informed by, but not answered in the job description. Good questions will signal that you are a mature and thoughtful candidate who is looking for the best mutual fit. You might ask about the team dynamics, who assigns work to the team, how success is measured, what a strong candidate looks like, etc. The goal is not to impress someone so that they will give you a job! These conversations will help you **understand the field better, how jobs really work in this new field, and what you are (and are not) looking for in your next job.**
+
+Sometimes reaching the best person will take a few phone calls. If your first call is with someone on a neighboring team to the one you're most interested in, you want to tailor your questions accordingly. In that case, your unspoken goal is that they will leave the call and advocate for you.  Your spoken goal might be an introduction to folks who are closer to your desired role, or an entry into the official referral system. 
+
+ 
 
 ### Dos and don'ts of referral requests
 
+
+No matter how you decide to seek referrals, please be sure to ask for a specific action. You can link the job description that you're interested in, and/or ask if they know anyone on that team and whether they'd be comfortable connecting you for an informational interview. 
+
+Using the right language will help people help you. Consider how much effort you are asking the person to put into your job search.  If you provide a JobID or team name, they can easily determine how they can help.  If you say "I enjoy machine learning, do you know of any jobs?" you are asking for a heavy lift that they may not be able to accomodate. 
+
+
 | Do    | Do Not |
 | -------- | ------- |
-| Reach out to your best-known connections first, and ask for introductions  | Ask them to "keep you in mind for a job."     |
+| Reach out to your best-known connections first, and ask for introductions.  | Ask them to "keep you in mind for a job."     |
 | Be specific about the actions you want them to take. Eg. "Can you introduce me to someone who works on this team for an informational interview, I would like to learn more" or "Can you refer me for JobID #" | Ask them to tell you what jobs at their company may be a fit for your skills.     |
 
-<!-- 
-Do
-- Reach out to your best-known connections first, and ask for introductions
-- Be specific about the actions you want them to take. Eg. "Can you introduce me to someone who works on this team for an informational interview, I would like to learn more" or "Can you refer me for JobID #"
 
-Do not
-- Ask them to "keep you in mind for a job." 
-- Ask them to tell you what jobs at their company may be a fit for your skills. -->
-
-Outreach takes effort, but it is probably the most impactful thing you can do well. Using the right language will help people help you. It's much easier  for someone to respond 'yes I know that person, let me connect,' than it is for them to search for you. 
+Outreach takes effort, but it is probably the most impactful thing you can do well. 
 
 ## Apply
 
-Create a generic resume and cover letter, with a few sentences that can be tailored for each job. [Overleaf](https://www.overleaf.com/latex/templates/tagged/cv) is great for resume creation.
+This is the easy part! By now you have had a lot of informational interviews and you have a good sense of the roles that might be a good fit for  you, and of the strengths and traits hiring managers are looking for. For very technical roles, you might have learned that you need to do a little more leetcode or prep work to excel at the interviews before you start applying. 
+
+When you are ready, create a generic resume and cover letter, with a few sentences that can be tailored for each job based on the description and your calls. [Overleaf](https://www.overleaf.com/latex/templates/tagged/cv) is great for resume creation.
 
 
 ## Interview
@@ -60,10 +76,10 @@ Prepare specific, short stories from past experiences that would answer common b
 
 It's good to keep your stories in a list, so that you can put a checkmark next to ones that you've already told. You don't want to repeat the same story to multiple people at the same company, since they should compare notes during the debrief. 
 
-Be patient! I interviewed for about 30 roles the last time I was job hunting. In each conversation I learned more about what I was looking for and how to interview well for these roles. I wasn't thinking of it as trying to win the job, but trying to find the job that needs the skills I had at that time.
+
 
 <!-- Technical interview prep: Coursera, interview cake, leetcode.  -->
 
-## Negotiate!
+## Negotiate
 
 Congratulations on getting to this stage!  Take a breath.  If you are coming from academia, you might be intimidated about negotiation. You might even feel so grateful to have a job offer that you think you should accept right away.  I highly recommend that you first read [this salary negotiation advice for academics](https://www.kalzumeus.com/2012/01/23/salary-negotiation/?utm_source=rss&utm_medium=rss&utm_campaign=salary-negotiation).  
