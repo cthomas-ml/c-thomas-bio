@@ -27,7 +27,7 @@ Second order LinkedIn connections that go through a close connection of yours (e
 
 ## Informational interviews and referrals
 
-When I talk about referrals, I am **not** talking about a company's official referral system, in which a current employee enters your name, information, and the role IDs you are interested in. Through this system, your gets be entered into the pool of applicants to be screened by a recruiter.  It works best for folks who already have a large network and track record related to the job they want.  
+When I talk about referrals, I am **not** talking about a company's official referral system, in which a current employee enters your name, information, and the role IDs you are interested in. Through this system, your profile gets be entered into the pool of applicants to be screened by a recruiter.  It works best for folks who already have a large network and track record related to the job they want.  
 
 If you are coming from academia, a new field, or just don't have a huge network yet, you will have to work a bit harder to get a useful referral. I recommend reaching out to the best connection you can and requesting an informal conversation or informational interview about what it's like working at that company, or in that role. 
 

@@ -96,6 +96,13 @@ More quantum phrases
 ## Selected Publications
 
 <small>
+[Pretraining with hierarchical memories: separating long-tail and common knowledge](https://arxiv.org/pdf/2510.02375).
+Hadi Pouransari, David Grangier, C Thomas, Michael Kirchhof, Oncel Tuzel.
+*In-review at ICLR.*
+Oct 2025.
+<small>
+
+<small>
 [LangDA: Language-guided Domain Adaptive Semantic Segmentation](https://openreview.net/forum?id=iyULilaeYx) 
 Chang Liu, Saad Hossain, C Thomas, Kwei-Herng Lai, Raviteja Vemulapalli, Sirisha Rambhatla, Alexander Wong. 
 *NeurIPS 2024, AFM workshop,*
