@@ -137,3 +137,7 @@ June 2016.
 ## Self-Defense
 
 I am a longtime volunteer instructor and former board member at [Impact Bay Area](https://www.impactbayarea.org/), where we train students to set and hold  boundaries with verbal and physical self-defense skills.  Take a class! 
+
+## Mentoring
+
+I typically mentor one or two recent graduates entering the workforce, and my most recent mentee just found her dream job. If you are interested in exploring whether we are a good fit, please reach out. 
