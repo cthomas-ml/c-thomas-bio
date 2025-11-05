@@ -17,10 +17,10 @@ width="400"> -->
 ## Bio
 
 
-I lead a machine learning team at [Apple](https://www.apple.com/newsroom/) that translates advances in research to applications in manufacturing. In my present role, my applied research focuses on  domain adaptation and data-efficient machine learning. I am also interested in interpretability and improving control and safety in large language and multimodal models.
+I lead the machine learning team at [Apple](https://www.apple.com/newsroom/) that translates advances in research to applications in manufacturing. My applied research focuses on  domain adaptation and data-efficient machine learning. I am also interested in interpretability and improving control and safety in large language and multimodal models.
 
 <!-- why - how - what -->
-I have a PhD in Atomic, Molecular and Optical Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), and professional experience as a technical leader, machine learning engineer, quantum engineer and startup founder. When I'm not working to understand our world or become a better manager, I enjoy woodworking, cycling, and hiking with my wife and dog. I am also a board member and volunteer assistant instructor at [Impact Bay Area](https://www.impactbayarea.org/cthomas), where we teach self-defense under adrenaline. 
+I have a PhD in Atomic, Molecular and Optical Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), and professional experience as a technical leader, machine learning engineer, quantum engineer and startup founder. When I'm not working to understand our world or become a better manager, I enjoy woodworking, cycling, and hiking with my wife and dog. I am also a volunteer assistant instructor and former board member at [Impact Bay Area](https://www.impactbayarea.org/cthomas), where we teach self-defense under adrenaline. 
 
 
 
@@ -55,7 +55,7 @@ Successful applications of ML in manufacturing can reduce waste at a global scal
 <!-- what have we built -->
 
 My team's recent research leverages self-supervised pretraining and language-guided domain adaptation to reduce the volume of annotated device-specific data required to produce an effective model. 
-I was an organizer and panelist for the [2024 VISION workshop at ECCV](https://vision-based-industrial-inspection.github.io/eccv-24/), which brought together an international community of researchers to tackle key challenges in Vision-based Industrial Inspection. 
+I have contributed to the workshop on vision-based industrial inspection, as an invited speaker ([ICCV, 2025](https://vision-workshop.github.io/iccv-2025/)), panelist, and co-organizer ([ECCV, 2024](https://vision-based-industrial-inspection.github.io/eccv-24/)). The workshop brings together an international community of researchers to tackle real-world challenges in industrial inspection. 
 
 
 ### Interpretability, Alignment and Control of AI
@@ -72,7 +72,7 @@ With the rise of generative artificial intelligence, I have become increasingly 
 
 <img src="./assets/images/optical-table.png" style="float: right; padding-left: 10px; padding-top:10px" width="50%" height="auto">
 
-I earned my PhD in Atomic Physics from [UC Berkeley](http://ultracold.physics.berkeley.edu), for which I was awarded the [DOE SCGF](https://science.osti.gov/wdts/scgf) and [NSF GRFP](https://www.nsfgrfp.org) fellowships. Driven to understand quantum systems and the laws that underpin our physical universe, I studied macroscopic quantum states of matter called Bose-Einstein Condensates (BECs) in highly-controlled and well-understood environments. 
+I completed my PhD in Atomic Physics at [UC Berkeley](http://ultracold.physics.berkeley.edu), for which I was awarded the [DOE SCGF](https://science.osti.gov/wdts/scgf) and [NSF GRFP](https://www.nsfgrfp.org) fellowships. Driven to understand quantum systems and the laws that underpin our physical universe, I studied macroscopic quantum states of matter called Bose-Einstein Condensates (BECs) in highly-controlled and well-understood environments. 
 Together with my team, I built laser and high-vacuum systems to create, manipulate, and image the quantum wavefunctions of BECs and study how complex properties of real materials emerge. Find an accessible explanation in the first chapter of my dissertation. Based on this research I was recognized as one of [Scientific American's 30 under 30](https://www.scientificamerican.com/article/lindau-claire-thomas/). 
 
 <img src="./assets/images/qc.png" style="float: left; padding-right: 10px; padding-bottom: 30px;" width="25%" height="auto"> 
@@ -136,4 +136,4 @@ June 2016.
 
 ## Self-Defense
 
-I am a longtime volunteer instructor and recent board member at [Impact Bay Area](https://www.impactbayarea.org/), where we train students to set and hold  boundaries with verbal and physical self-defense skills.  Take a class! 
+I am a longtime volunteer instructor and former board member at [Impact Bay Area](https://www.impactbayarea.org/), where we train students to set and hold  boundaries with verbal and physical self-defense skills.  Take a class! 
