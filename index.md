@@ -12,7 +12,7 @@ alt="After a successful workshop at ECCV, 2024."
 width="400"> -->
 
 
-<img src="./assets/images/after-eccv.png" alt="After a successful workshop at ECCV, 2024." style="float: right; padding-left: 20px; padding-top: 90px;"  width="50%" height="auto">
+<img src="./assets/images/ECCV-lecture.png" alt="Speaking at ECCV, 2024." style="float: right; padding-left: 20px; padding-top: 90px;"  width="50%" height="auto">
 
 ## Bio
 
@@ -98,7 +98,7 @@ More quantum phrases
 <small>
 [Pretraining with hierarchical memories: separating long-tail and common knowledge](https://arxiv.org/pdf/2510.02375).
 Hadi Pouransari, David Grangier, C Thomas, Michael Kirchhof, Oncel Tuzel.
-*In-review at ICLR.*
+ICLR.
 Oct 2025.
 <small>
 

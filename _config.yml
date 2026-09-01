@@ -59,11 +59,11 @@ plugins:
 author:
   name   : "C Thomas, PhD"
   avatar : "/assets/images/cthomas-photo.png"
-  bio    : "Physicist, AI researcher, technical manager, self-defense teacher."
+  bio    : "AI/ML research & engineering leader, AI researcher, physicist, self-defense teacher."
   links:
     - label: "Resume"
       icon: "fas fa-fw fa-download"
-      url: "/assets/files/CThomas_2025.pdf"
+      url: "/assets/files/CThomas_2026.pdf"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/c-thomas-16694977/"
