@@ -55,7 +55,7 @@ Successful applications of ML in manufacturing can reduce waste at a global scal
 <!-- what have we built -->
 
 My team's recent research leverages self-supervised pretraining and language-guided domain adaptation to reduce the volume of annotated device-specific data required to produce an effective model. 
-I have contributed to the workshop on vision-based industrial inspection, as an invited speaker ([ICCV, 2025](https://vision-workshop.github.io/iccv-2025/)), panelist, and co-organizer ([ECCV, 2024](https://vision-based-industrial-inspection.github.io/eccv-24/)). The workshop brings together an international community of researchers to tackle real-world challenges in industrial inspection. 
+I have contributed to the workshop on vision-based industrial inspection, as an invited speaker ([ICCV, 2025](https://vision-workshop.github.io/iccv-2025/)), panelist, and co-organizer ([ECCV, 2024](https://vision-based-industrial-inspection.github.io/eccv-24/), [CVPR, 2026](https://vision-workshop-26.github.io/cvpr-2026/)). The workshop brings together an international community of researchers to tackle real-world challenges in industrial inspection. 
 
 
 ### Interpretability, Alignment and Control of AI
