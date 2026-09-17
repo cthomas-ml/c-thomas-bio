@@ -73,6 +73,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cthomas-ml"
+    - label: "Email"
+      icon: "fas fa-envelope fa-fw"
+      url: "mailto:cthomas2416@gmail.com"
     # - label: "Dissertation"
     #   icon: "fas fa-fw fa-link"
     #   url: "http://oxford.physics.berkeley.edu/pubs/thesis_ckt.pdf"
@@ -80,11 +83,11 @@ author:
 # nothing fancy in the footer...
 atom_feed: 
   hide: true
-# footer:
-#   links:
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
+footer:
+  links:
+    # - label: "Email"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
 #     - label: "Instagram"
 #       icon: "fab fa-fw fa-instagram"
 #       url: "https://instagram.com/"
