@@ -13,7 +13,7 @@ toc_sticky: true
 
 ## Incentives in AI Safety
 
-This document introduces the Incentives Matrix, a framework for discussing incentive structures in AI Safety and is meant to help identify who may be most likely to address key challenges in the space. 
+This document introduces the Incentives Matrix, a framework for discussing incentive structures in AI Safety and is meant to help identify which entities may be most likely to address key challenges in the space. 
 
 Consider harms resulting from deployment of advanced AI systems across two axes, from the perspective of the entity serving the model. First, we ask **How aware is the model server of the specific harm?** The model server is typically a private sector actor but may also be a government entity, and we take an expansive view. The major players in AI today have been largely collaborative in identifying and addressing many important harms, but it seems inadvisable to assume that entities hosting models *cannot* intend harm.  Server awareness of harms ranges from unaware to deliberate.
 
@@ -40,30 +40,46 @@ AWARE OF HARM     │     Known Harm  │     Benefit,     │     Known Harm   
                   │                 │     Known Harm   │                       │
                   ├─────────────────┼──────────────────┼───────────────────────┤
   SERVER          │  7. No Benefit, │  8. Incidental   │  9. Intended Benefit, │
-  INTENDED        │     Known Harm  │     Benefit,     │     Harm              │
+  INTENDED        │   Intended Harm │     Benefit,     │     Harm              │
   HARM            │       [EMPTY]   │     Intended Harm│     Intended          │
                   └─────────────────┴──────────────────┴───────────────────────┘
 ```
 
 
-Items in the first column broadly describe a poor product, and should be improved by the company building and serving the model. An example of such a harm is a smartphone randomly sets itself on fire. We do regulate this sort of thing, but it is also just not great business. Note that Cell 7 is hard to fathom, but not impossible, so it remains.
+Items in the first column broadly describe a poor product and will be improved by the company building and serving the model. A smartphone battery that causes fires will run up against regulations, but it is also just bad business. Note that an entity intending harm without benefit (Cell 7) is hard to fathom, but not impossible, so it remains.
 
 Moving to the right, the incentive conversation gets more interesting. When the server benefits, either incidentally or by-design, market self-correction becomes unreliable. This is where the question of who should act, and with what resources, becomes central.
 
-The rows describe the awareness of the entity hosting and serving the model of the particular harm underway. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis. 
+The rows describe the awareness of the entity hosting and serving the model of the particular harms caused. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis. 
 
-This framing assumes that there is an entity serving a model with a motivation (typically profit or power). A case has been made that open source models are inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.
+*This framing assumes that there is an entity serving a model with a motivation (typically profit or power). A case has been made that an open source model is  inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.*
+
+
+
+
+### Example Harms 
+
+To make this a bit more concrete, consider the following specific harms and where they land in the Incentive Matrix. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. 
+
+- **Cell 1:** A model recommending to put glue on pizza caused reputational damage with no benefit. Autonomous agents hacking external systems without instruction. These risks migrate to cell 3 as awareness accumulates.
+- **Cell 2:** User-intended harms, as the server benefits incidentally even if it is unaware of the particular harm. Intentional agentic hacks. Harmful information disclosure may belong here (censorship risks appear in cell 9.)
+- **Cell 3:** Some engagement mechanics designed to increase usage that cause unexpected harm.
+- **Cell 4:** Environmental damage, economic collapse, and biased automated decisions in criminal justice and hiring.
+- **Cell 5:** Degradation of democracy, systemic monoculture, education harms and erosion of privacy norms.
+- **Cell 6:** AI-driven psychological dependency and relationships belong here, where the harm drives return visits by design and awareness is established.
+- **Cell 7:** Unfathomable, but not impossible, this is the situation where a server intends harm but does not benefit from the harms caused. 
+- **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but it is not the goal in and of itself. 
+- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal.
+
+More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. 
 
 
 ---
 
 ### Who Is Best Positioned to Act
 
-The matrix tells a clear story about motivation and positioning for risk mitigation.
-Each cell contains real harms that need to be addressed, and it's important to be realistic about who is most likely to address them. **If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.**
+The matrix highlights opportunities for harm and risk mitigation. Each cell contains real harms that need to be addressed, and each person or institution in the AI Safety space has limited resources with which to address harms. **If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.**
 
-Each institution has limited resources, and focusing those resources where they are least duplicated may be more effective than spreading them across the full grid.  
-A regulator adding capacity in cell 1 is largely reinforcing what the market handles. That same capacity directed at cells 5 through 9 addresses work that might otherwise not get done.
 
 
 ```
@@ -88,35 +104,11 @@ A regulator adding capacity in cell 1 is largely reinforcing what the market han
       whistleblowers
 ```
 
-
-Academic institutions and benchmark setters have a particularly important role across the grid. In the top row, they define what reasonable expectation means. In cells 5 and 6, they provide the independent research and auditing capacity that internal teams cannot credibly supply. In cells 8 and 9, they contribute policy research and international standards development from outside the server's jurisdiction, where their independence is structurally valuable.
-
-
-### Example Harms 
-
-To make this a bit more concrete, consider the following specific harms in each cell.  More details about each cell can be found in the Appendix. 
-
-- **Cell 1:** A model recommending glue on pizza caused reputational damage with no benefit from the harm. Early autonomous agent deployments attempting to hack external systems may also belong here, migrating to cell 3 as awareness accumulates.
-- **Cell 2:** User-intended harms belong here, as the server benefits incidentally even if it is unaware of the particular harm. User-intended agentic hacks or harmful information disclosure may belong here (Censorship risks appear in cell 9.)
-- **Cell 3:** Engagement mechanics designed to increase usage causing unexpected harm belong here. 
-- **Cell 4:** Environmental damage, economic collapse, and biased automated decisions in criminal justice and hiring.
-- **Cell 5:** Degradation of democracy, systemic monoculture, education harms and erosion of privacy norms.
-- **Cell 6:** AI-driven psychological dependency and relationships belong here, where the harm drives return visits by design and awareness is established.
-- **Cell 7:** Unfathomable, but not impossible, this is the situation where a server intends harm but does not benefit from the harms caused. 
-- **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but not the goal in and of itself. 
-- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal.
-
-The Appendix details example harms and common countermeasures for each cell. There is no evaluation of countermeasures, but it is important to note that some countermeasures may reduce one risk while increasing another. This is also discussed in the Risk Interactions section.
-
 ---
 
 ## Prioritizing Risks 
 
-The harms in the Incentives Matrix are neither evenly distributed, nor equally urgent. Some of them impact individuals, and others an entire population.  A traditional risk matrix plots risks on two axes -- **likelihood** (how likely is this harm to occur) and **severity** (how bad it is when it does). 
-
-This tool highlights that some risks may feel lower likelihood than they are because we implicitly trust the model server to prevent them. Making that assumption explicit raises questions of standards, protections, or assurances that could be put in place today. 
-
-**Severity definitions in this document**
+Vital harms that may arise from AI are not all equal. A traditional risk matrix plots risks on **likelihood** and **severity** axes.  In AI Safety conversations today, some risks may feel less likely than they are because we implicitly trust the model server to prevent them. Explicitly mapping harms on this matrix can uplift questions of standards, protections, or assurances that could be put in place today. 
 
 Harms in AI safety are expected to be incredibly impactful to life on Earth. As such, in order to differentiate them along the severity axis, the following definitions are used:
 
@@ -127,12 +119,12 @@ Harms in AI safety are expected to be incredibly impactful to life on Earth. As 
 - **Negligible:** Harm is real but inconsequential at any meaningful scale. Included for completeness but not a prioritization concern.
 
 
-
-
 ---
-### Increasing Capability Shifts Risk
+### Increasing AI Capability Shifts Risk
 
-Risk matrices are never static, but this is particularly true in a fast-moving technological revolution. As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances.  We show the risk matrix for two cells before and after introducing recent capabilities including agentic action, multi-agent collaboration, audio and video modalities, real-world tool access, and API availability.
+Risk matrices are never static, but this is particularly true in a fast-moving technological revolution. As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances.  
+
+The examples below include proposed rankings for selected risks in two distant cells in the Incentives Matrix, before and after introducing recent capabilities including agentic action, multi-agent collaboration, audio and video modalities, real-world tool access, and API availability.
 
 *Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.*
 
@@ -145,16 +137,17 @@ CATASTROPHIC   │  (A)       │  A'         │             │               
                ├────────────┼─────────────┼─────────────┼────────────────┤
 MAJOR          │            │  (B)(D)(F)  │  B' D' I'   │  F'  K'  L     │
                ├────────────┼─────────────┼─────────────┼────────────────┤
-MODERATE       │  (H)(I)    │  C  (E)(G)  │  E'  G'(J)  │  H'  J'  (K)  │
+MODERATE       │  (H)(I)    │  C  (E)(G)  │  E'  G'(J)  │  H'  J'  (K)   │
                ├────────────┼─────────────┼─────────────┼────────────────┤
 MINOR          │            │             │             │  M             │
                └────────────┴─────────────┴─────────────┴────────────────┘
+               Example demonstrating tool utility - actual designations will vary based on institutional priority, and should be made by polling many people within an insitute. 
 ```
 *A=Bioweapons, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud*
 
-The model server has direct liability exposure for most risks in this cell, and the private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces this through criminal liability for users and liability standards for enablers.
+The entity serving the model has direct liability exposure for risks in this cell, and the private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces this through criminal liability for users and liability standards for enablers.
 
-The risks that warrant independent watchdog research and regulatory attention are most valuable where liability is diffuse or hard to attribute -- C, E, and the items capability advances have pushed toward almost certain. A warrants and receives urgent independent attention as the model server's incentives alone are insufficient given the irreversibility of the harm.
+The risks that warrant independent watchdog research and regulatory attention may be particularly valuable where liability is diffuse or hard to attribute -- C, E, and the items capability advances have pushed toward almost certain. A warrants and receives urgent independent attention as the model server's incentives alone are insufficient given the irreversibility of the harm.
 
 ---
 
@@ -172,24 +165,20 @@ MODERATE       │            │  (E)        │  (D)  E'    │               
 ```
 *A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source*
 
-Unlike cell 2, these risks are already manifesting as real harm, and they are deliberate actions by state and commercial actors. The entire matrix sits in the likely-to-almost-certain range from the outset. Capability advances push severity upward rather than increasing likelihood.
+Unlike cell 2, these harms are intentional. No self-correcting mechanism exists where the server explicitly intends harm and has designed the product so that they benefit directly from harms. Domestic and international regulation are insufficient when that actor is the state, and liability frameworks do not apply. 
 
-No self-correcting mechanism exists where the server explicitly intends harm and has designed the product so that they benefit directly from harms. Domestic and international regulation are insufficient when that actor is the state, and liability frameworks do not apply. 
-
-The primary counterforces are international coordination, civil society documentation, and competing open infrastructure. European companies and policymakers have emerged as a meaningful force on the latter, though not yet sufficient at scale. Every item in this matrix warrants urgent independent research and regulatory attention, and that urgency grows directly with capability.
+The entire matrix sits in the likely-to-almost-certain range. Capability advances push severity upward rather than increasing likelihood. The primary counterforces are international coordination, civil society documentation, and competing open infrastructure. European companies and policymakers have emerged as a meaningful force on the latter, though not yet sufficient at scale. Every item in this matrix warrants urgent independent research and regulatory attention, and that urgency grows with capability.
 
 ### Risk Interactions
 
-The risks in this framework are intertwined such that how we mitigate one can increase another. For example, restricting human access to true, harmful information as a chosen mitigation to prevent bioweapon synthesis may reduce a low-likelihood catastrophic risk while increasing the likelihood of censorship, political manipulations, and other societal harms in cells 5 through 8.  Trading a rare catastrophic risk for a near-certain major one is not obviously  right.
-Any prioritization exercise should explicitly map interactions. 
+The risks in this framework are intertwined such that how we mitigate one can increase another. For example, restricting human access to (true) harmful information is one way to mitigate the risk of bioweapon synthesis. It would reduce a low-likelihood catastrophic risk, but would certainly increase the likelihood of censorship and political manipulations.  It seems important for AI Safety teams to explicitly map how countermeasures may impact other harms.
 
 
 ### Risk Matrix Lessons, Opportunities and Next Steps
 
-The risk matrix framework can support any organization in  prioritization. An important observation from the examples above is that it takes a team of experts to properly assess both current and upcoming risks, and that those risks are serious but distinguishable. They sit in different places, move in different directions as capabilities increase, and require different responses from different actors. 
+The risk matrix framework can support any organization in  prioritization. The matrix entries above are example placements of commonly discussed harms in AI Safety. Properly assessing likelihood and severity may require different people to answer well. Those best placed to assess how a financial crisis cascades or a biological threat spreads are rarely the same people building models and doing AI research.
 
-Likelihood and severity are separate questions that may require different people to answer well. Those best placed to assess how a financial crisis cascades or a biological threat spreads are rarely the same people building models and doing AI research.
-The most useful version of this tool would draw on AI capability researchers, domain experts in relevant harm areas (epidemiologists, economists, security experts, public health officials), and policy teams who understand institutional and societal response, to place risks along each axis. 
+The most useful risk matrix would draw on AI capability researchers, domain experts in relevant harm areas (epidemiologists, economists, security experts, public health officials), and policy teams who understand institutional and societal response, to place risks along each axis. 
 
 ## Conclusion
 
@@ -197,9 +186,8 @@ The risks that receive the most attention and funding today cluster in the upper
 
 Capability advances move nearly every risk up and to the right. The no-benefit column tends toward self-correction. The incidental benefit column requires external pressure. The by-design column has no self-correcting mechanism, and in the deliberate row, domestic mechanisms may be insufficient entirely.
 
-The Incentives Matrix makes the implication concrete: the cells with the least coverage are precisely the ones where market incentives point in the wrong direction. Cells 3 and 4 are where documentation and transparency create the conditions for accountability. Cells 5 and 6 contain the largest number of affected people and the most significant space for independent domestic work. Cells 8 and 9 require genuine institutional independence and, in many cases, international coordination.
 
-The framework does not prescribe solutions. It maps where the work is, names who is best positioned to do it, and makes visible what goes unaddressed when the conversation is driven only by those with the most to gain from the status quo.
+The frameworks here aim to map where the work is, help identify which entities are best positioned, and make visible what goes unaddressed when the conversation is driven primarily by those with the most to gain.
 
 
 ## Appendix: Incentive Cell Details
