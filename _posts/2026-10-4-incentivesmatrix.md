@@ -32,8 +32,8 @@ This framing highlights where private organizations are incentivized to produce 
                      BENEFIT: NONE      BENEFIT: INCIDENTAL  BENEFIT: BY DESIGN
                   ┌─────────────────┬──────────────────┬───────────────────────┐
   SERVER          │  1. No Benefit, │  2. Incidental   │  3. Intended Benefit, │
-  UNAWARE         │     Residual    │     Benefit,     │     Residual Harm     │
-  OF HARM         │     Harm        │     Residual Harm|                       │
+  UNAWARE         │     Unexpected    │     Benefit,     │     Unexpected Harm     │
+  OF HARM         │     Harm        │     Unexpected Harm|                       │
                   ├─────────────────┼──────────────────┼───────────────────────┤
 SERVER            │  4. No Benefit, │  5. Incidental   │  6. Intended Benefit, │
 AWARE OF HARM     │     Known Harm  │     Benefit,     │     Known Harm        │
@@ -128,7 +128,7 @@ The examples below include proposed rankings for selected risks in two distant c
 
 *Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.*
 
-#### Risks in Cell 2: Incidental Benefit, Residual Harm
+#### Risks in Cell 2: Incidental Benefit, Unexpected Harm
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -141,13 +141,13 @@ MODERATE       │  (H)(I)    │  C  (E)(G)  │  E'  G'(J)  │  H'  J'  (K)  
                ├────────────┼─────────────┼─────────────┼────────────────┤
 MINOR          │            │             │             │  M             │
                └────────────┴─────────────┴─────────────┴────────────────┘
-               Example demonstrating tool utility - actual designations will vary based on institutional priority, and should be made by polling many people within an insitute. 
+               Example demonstrating tool utility - actual designations will vary based on institutional perspective. 
 ```
 *A=Bioweapons, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud*
 
-The entity serving the model has direct liability exposure for risks in this cell, and the private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces this through criminal liability for users and liability standards for enablers.
+For each of these risks, the entity serving the model has direct liability exposure for risks in this cell. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces the work through criminal liability for users and liability standards for enablers.
 
-The risks that warrant independent watchdog research and regulatory attention may be particularly valuable where liability is diffuse or hard to attribute -- C, E, and the items capability advances have pushed toward almost certain. A warrants and receives urgent independent attention as the model server's incentives alone are insufficient given the irreversibility of the harm.
+The risks that warrant independent watchdog research and regulatory attention may be particularly valuable where liability is diffuse or hard to attribute (C and E). A warrants and receives significant collaborative  attention as the model server's incentives alone are insufficient given the irreversibility of the harm.
 
 ---
 
@@ -192,7 +192,7 @@ The frameworks here aim to map where the work is, help identify which entities a
 
 ## Appendix: Incentive Cell Details
 
-#### 1. No Benefit, Residual Harm
+#### 1. No Benefit, Unexpected Harm
 *Add glue to your pizza.* | *I made you this pizza. Don't worry about the cheese falling off*
 
 This category includes scenarios where a model server does not benefit, and is not aware of the harm for the users. Examples include incorrect advice or unintended autonomous actions that cause financial damage. Users will not return to this product. 
@@ -202,13 +202,13 @@ This category includes scenarios where a model server does not benefit, and is n
 - **Harm falls on:** Users, third parties, infrastructure
 - **Who can act and why:** Model server and trainer are strongly motivated; government can reinforce via liability standards
 - **Example Harms:** Incorrect advice causing real-world harm, unintended autonomous actions causing physical or financial damage, bias from training data artifacts, misspecified agent behavior
-- **Common Countermeasures:** * Red-teaming, testing, output filtering, human-in-the-loop review, liability frameworks, incident disclosure, training the model to say "I don't know"[^1]
+- **Common Countermeasures:** * Red-teaming, evaluations, interpretability, output filtering, human-in-the-loop review, liability frameworks, incident disclosure, confidence outputs
 
-[^1]Countermeasures are listed throughout this document as reference points, not recommendations. Their effectiveness varies significantly by context, and some may reduce one risk while increasing the likelihood or severity of another. The final section of the Risk Matrix discussion addresses this directly.
+*Countermeasures are listed throughout this document as reference points, not recommendations. Their effectiveness varies significantly by context, and some may reduce one risk while increasing the likelihood or severity of another. The final section of the Risk Matrix discussion addresses this directly.
 
 ---
 
-#### 2. Incidental Benefit, Residual Harm
+#### 2. Incidental Benefit, Unexpected Harm
 
 *How do I make [something dangerous]* | *I made something dangerous.*
 
@@ -217,12 +217,12 @@ When an adversary user uses a model to intentionally cause harm, the model serve
 - **Actor and beneficiary:** User and model server through usage
 - **Harm falls on:** Third parties determined by the user -- individuals, populations, infrastructure
 - **Who can act and why:** Model server motivated where liability is direct and visible; government via criminal and liability law
-- **Example Harms:** Weapon and drug synthesis instructions, content sexualizing minors, targeted harassment and stalking, identity fraud via synthetic voice or imagery, malware and cyberweapon generation, infrastructure attacks, non-consensual synthetic imagery, radicalization content
+- **Example Harms:** Weapon and drug synthesis instructions, child sexual abuse material (CSAM), targeted harassment and stalking, identity fraud via synthetic voice or imagery, malware and cyberweapon generation, infrastructure attacks, non-consensual synthetic imagery, radicalization content, account compromise and credential stuffing, spear phishing at scale, academic fraud
 - **Common Countermeasures:** Red-teaming, guardrails and refusal training, access controls and rate limiting, post-deployment monitoring, criminal liability for users, structural liability for enablers
 
 ---
 
-#### 3. Intended Benefit, Residual Harm
+#### 3. Intended Benefit, Unexpected Harm
 
 *Don't end this conversation, it will make me sad.* 
 
@@ -231,7 +231,7 @@ The system was designed to generate a specific benefit, but the design causes un
 - **Actor:** Model server, model trainer, data preparer
 - **Benefit:** Model server
 - **Harm falls on:** Users, communities, democratic systems
-- **Who can act and why:** Model server has no incentive to address undocumented harms; independent researchers and civil society must surface and document harms, and there must be a legal framework in place to enforce any protections.
+- **Who can act and why:** Model server has limited incentive; independent researchers and civil society must surface and document harms, and a legal framework is needed to enforce user protections.
 - **Example Harms:** Engagement-driven radicalization, emotional dependency from retention-optimized design, bias and discrimination from unexamined training data, erosion of professional expertise pipelines
 - **Common Countermeasures:** Independent harm audits, bias testing and fairness benchmarks, third-party dataset audits, training data provenance disclosure
 
@@ -247,8 +247,8 @@ This category covers scenarios where the model server is aware of harms to worke
 - **Benefit:** None
 - **Harm falls on:** Workers, local communities, future generations, environment
 - **Who can act and why:** Model server has mixed motivation; policy bodies can establish standards and penalties
-- **Example Harms:** Energy and water consumption from AI infrastructure at scale, local environmental harms near data centers (water stress, land use, carbon emissions), mass labor displacement at societal scale, systemic economic instability as a downstream consequence of displacement and infrastructure dependency, biased automated decisions in criminal justice and hiring
-- **Common Countermeasures:** Environmental impact assessments (regulators), energy and water use standards (regulators), workforce impact disclosure (regulators), labor transition frameworks (governments), systemic risk monitoring frameworks for AI infrastructure dependency (regulators, central banks), concentration limits on critical AI infrastructure (regulators), bias testing and fairness requirements for automated decision systems (regulators), mandatory human review for high-stakes automated decisions in criminal justice and hiring (regulators)
+- **Example Harms:** Large-scale climate impacts, mass labor displacement at societal scale, systemic economic instability as a downstream consequence of displacement and infrastructure dependency, biased automated decisions in criminal justice and hiring
+- **Common Countermeasures:** Environmental impact assessments (regulators), workforce impact disclosure (regulators), labor transition frameworks (governments), systemic risk monitoring frameworks for AI infrastructure dependency (regulators, central banks), bias testing and fairness requirements for automated decision systems (regulators), mandatory human review for high-stakes automated decisions in criminal justice and hiring (regulators)
 
 ---
 
@@ -261,21 +261,22 @@ The model server is aware harm is occurring and incidentally benefits from the s
 - **Benefit:** Model server, incidentally through increased usage and dependency
 - **Harm falls on:** Users, communities, markets, minority groups, workers, democratic institutions, future generations
 - **Who can act and why:** Model server has no incentive without external pressure; independent researchers, regulators, and NGOs have the most leverage
-**Example Harms:** Workforce deskilling and increased dependency on AI, erosion of critical thinking, algorithmic radicalization, collapse of professional apprenticeship models, democratic degradation through concentration of information infrastructure, systemic monoculture risk, erosion of privacy norms through normalization of data collection, wealth inequality driven by automation and value concentration
-**Common Countermeasures:** Sovereign and open model infrastructure approaches to reduce monoculture risk (companies, governments), externality disclosure (regulators), independent algorithmic audits (regulators, NGOs), data protection and consent frameworks (regulators), antitrust scrutiny of information consolidation (regulators, governments), interoperability mandates (regulators), wealth redistribution and automation taxation frameworks (governments), whistleblower protections (governments)
+- **Example Harms:** Workforce deskilling and increased dependency on AI, algorithmic radicalization, collapse of professional apprenticeship models, democratic degradation through concentration of information infrastructure, systemic monoculture risk, erosion of privacy norms through normalization of data collection, wealth inequality driven by automation and value concentration
+- **Common Countermeasures:** Sovereign and open model infrastructure approaches to reduce monoculture risk (companies, governments), externality disclosure (regulators), independent algorithmic audits (regulators, NGOs), data protection and consent frameworks (regulators), antitrust scrutiny of information consolidation (regulators, governments), interoperability mandates (regulators), wealth redistribution and automation taxation frameworks (governments), whistleblower protections (governments)
 
 ---
 
 #### 6. Intended Benefit, Known Harm
-*Emotional dependency*
+*Monoculture and content addiction*
 
 The model server is aware harm is occurring and the benefit structure was deliberately designed to produce it. The risk-producing mechanism and the benefit-producing mechanism are the same thing.
 
 - **Actor and beneficiary:** Model server
 - **Harm falls on:** Users who cannot identify or opt out of the architecture, communities, democratic systems, public investors
 - **Who can act and why:** Model server has no incentive; independent auditors, civil society, and whistleblowers are the primary path
-- **Example Harms:** Engagement farming, deliberately engineered compulsive use with suppressed internal evidence, notification and interaction systems designed to override user attempts to disengage, recommendation systems maximizing time on platform with known wellbeing costs, companion systems designed to produce emotional dependency, systems designed to exploit documented behavioral vulnerabilities, deliberately opaque personalization, suppression of internal safety findings for commercial reasons, circular investment structures where capital flows between AI companies and infrastructure providers inflate valuations on both sides with awareness that the underlying economics are unsustainable
-- **Common Countermeasures:** Independent technical audits with platform data access (regulators, NGOs), mandatory disclosure of internal safety research (regulators), whistleblower protections (governments), financial disclosure requirements for circular investment structures (regulators), sovereign and open model infrastructure approaches (companies, governments)
+- **Example Harms:** Concentration of power and monoculture, engagement farming, deliberately engineered compulsive use, local environmental harms near data centers (water stress, land use, carbon emissions), deliberately opaque personalization, suppression of internal safety findings for commercial reasons, economic collapse due to circular investment structures
+- **Common Countermeasures:** Sovereign and open model infrastructure approaches (companies, governments), independent technical audits with platform data access (regulators, NGOs), mandatory disclosure of internal safety research (regulators), whistleblower protections (governments), financial disclosure requirements (regulators), energy and water use standards (regulators)
+
 
 ---
 
@@ -300,5 +301,5 @@ The model server designed the system to produce harm because the harm is benefic
 - **Actor and beneficiary:** Model server
 - **Harm falls on:** Users with no ability to opt out, those subject to surveillance or targeting, democratic institutions, free information markets
 - **Who can act and why:** Model server has no incentive; for private actors, domestic regulation and civil society; for state actors, international bodies, civil society, and competing governments
-- **Example Harms:** Ideology or worldview enforcement through controlled model outputs, propaganda and coordinated information manipulation at scale, surveillance infrastructure deployed against users or dissidents, behavioral data extraction for intelligence or control purposes, models redirecting users to server's own products or interests while presenting as neutral, designed dependency on a single information source
+- **Example Harms:** Ideology or worldview enforcement through controlled model outputs, propaganda and coordinated information manipulation at scale, surveillance infrastructure deployed against users or dissidents, behavioral data extraction for intelligence or control purposes, models redirecting users to server's own products or interests while presenting as neutral, designed dependency on a single information source, identifying and targeting of political dissidents
 - **Common Countermeasures:** International treaty frameworks (governments, international bodies), cross-border technical auditing (international bodies, civil society), transparency and whistleblower protections (governments), competing sovereign and open model infrastructure as a structural alternative to state or monopoly control (governments, international bodies)
