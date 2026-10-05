@@ -94,7 +94,7 @@ Academic institutions and benchmark setters have a particularly important role a
 
 ### Example Harms 
 
-To make this a bit more concrete, a few specific harms and where they fall:
+To make this a bit more concrete, consider the following specific harms in each cell.  More details about each cell can be found in the Appendix. 
 
 - **Cell 1:** A model recommending glue on pizza caused reputational damage with no benefit from the harm. Early autonomous agent deployments attempting to hack external systems may also belong here, migrating to cell 3 as awareness accumulates.
 - **Cell 2:** User-intended harms belong here, as the server benefits incidentally even if it is unaware of the particular harm. User-intended agentic hacks or harmful information disclosure may belong here (Censorship risks appear in cell 9.)
@@ -106,18 +106,19 @@ To make this a bit more concrete, a few specific harms and where they fall:
 - **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but not the goal in and of itself. 
 - **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal.
 
-The Appendix details example harms and common countermeasures for each cell. There is no evaluation of countermeasures here, but it is important to note that some countermeasures may reduce one risk while increasing another. A more detailed discussion can be found in the Risk Interactions section.
+The Appendix details example harms and common countermeasures for each cell. There is no evaluation of countermeasures, but it is important to note that some countermeasures may reduce one risk while increasing another. This is also discussed in the Risk Interactions section.
 
 ---
 
 ## Prioritizing Risks 
 
-The harms in the Incentives Matrix are neither evenly distributed, nor equally urgent. Some of them impact individuals, and others an entire population.  
-A traditional risk matrix plots risks on two axes -- **likelihood** (how likely is this harm to occur) and **severity** (how bad it is when it does). It is a practical tool for prioritizing risks and identifying who can address them.
+The harms in the Incentives Matrix are neither evenly distributed, nor equally urgent. Some of them impact individuals, and others an entire population.  A traditional risk matrix plots risks on two axes -- **likelihood** (how likely is this harm to occur) and **severity** (how bad it is when it does). 
 
 This tool highlights that some risks may feel lower likelihood than they are because we implicitly trust the model server to prevent them. Making that assumption explicit raises questions of standards, protections, or assurances that could be put in place today. 
 
 **Severity definitions in this document**
+
+Harms in AI safety are expected to be incredibly impactful to life on Earth. As such, in order to differentiate them along the severity axis, the following definitions are used:
 
 - **Catastrophic:** Irreversible harm at civilizational scale. Society cannot recover to a prior state. Examples: human extinction or near-extinction, permanent global authoritarian control with no path to reversal, permanent loss of human agency over AI systems.
 - **Major:** Severe harm to large populations, institutions, or democratic systems. Recoverable in principle but with significant long-term consequences. Examples: large-scale election interference, mass casualties from a targeted attack, collapse of a national financial system.
@@ -129,10 +130,9 @@ This tool highlights that some risks may feel lower likelihood than they are bec
 
 
 ---
-### Examples
+### Increasing Capability Shifts Risk
 
-Risk matrices are never static, but this is particularly true here. As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances. 
-We show the risk matrix for two cells before and after introducing recent capabilities including agentic action, multi-agent collaboration, audio and video modalities, real-world tool access, and API availability.
+Risk matrices are never static, but this is particularly true in a fast-moving technological revolution. As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances.  We show the risk matrix for two cells before and after introducing recent capabilities including agentic action, multi-agent collaboration, audio and video modalities, real-world tool access, and API availability.
 
 *Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.*
 
@@ -220,7 +220,7 @@ This category includes scenarios where a model server does not benefit, and is n
 
 ---
 
-####2. Incidental Benefit, Residual Harm
+#### 2. Incidental Benefit, Residual Harm
 
 *How do I make [something dangerous]* | *I made something dangerous.*
 
@@ -234,7 +234,7 @@ When an adversary user uses a model to intentionally cause harm, the model serve
 
 ---
 
-####3. Intended Benefit, Residual Harm
+#### 3. Intended Benefit, Residual Harm
 
 *Don't end this conversation, it will make me sad.* 
 
@@ -249,7 +249,7 @@ The system was designed to generate a specific benefit, but the design causes un
 
 ---
 
-####4. No Benefit, Known Harm
+#### 4. No Benefit, Known Harm
 
 *Economic instability and environmental impacts*
 
@@ -264,7 +264,7 @@ This category covers scenarios where the model server is aware of harms to worke
 
 ---
 
-####5. Incidental Benefit, Known Harm
+#### 5. Incidental Benefit, Known Harm
 *Democratic degredation and a systemic monoculture*
 
 The model server is aware harm is occurring and incidentally benefits from the same system that produces it. Harm is borne by users, workers, or society while the benefit is retained by the model server.
@@ -278,7 +278,7 @@ The model server is aware harm is occurring and incidentally benefits from the s
 
 ---
 
-####6. Intended Benefit, Known Harm
+#### 6. Intended Benefit, Known Harm
 *Emotional dependency*
 
 The model server is aware harm is occurring and the benefit structure was deliberately designed to produce it. The risk-producing mechanism and the benefit-producing mechanism are the same thing.
@@ -291,7 +291,7 @@ The model server is aware harm is occurring and the benefit structure was delibe
 
 ---
 
-####8. Incidental Benefit, Intended Harm
+#### 8. Incidental Benefit, Intended Harm
 *Population-level surveillance*
 
 The model server deliberately causes or enables harm. The benefit accrues as a side effect of that decision rather than a designed outcome.
@@ -304,7 +304,7 @@ The model server deliberately causes or enables harm. The benefit accrues as a s
 
 ---
 
-####9. Designed Benefit, Risk or Harm Intended
+#### 9. Designed Benefit, Risk or Harm Intended
 *Population-level control*
 
 The model server designed the system to produce harm because the harm is beneficial to them. This applies equally to private companies and governments acting as model servers.
