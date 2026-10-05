@@ -6,7 +6,6 @@ categories:
 tags:
   - Safety
   - Proposal
----
 toc: true
 toc_sticky: true
 ---
@@ -47,7 +46,7 @@ AWARE OF HARM     │     Known Harm  │     Benefit,     │     Known Harm   
 ```
 
 
-Items in the first column broadly describe a poor product, and should in theory be improved by the company building and serving the model. An example of such a harm is a smartphone randomly sets itself on fire. We do regulate this sort of thing, but it is also just not great business. Note that Cell 7 is hard to fathom, but not impossible, so it remains.
+Items in the first column broadly describe a poor product, and should be improved by the company building and serving the model. An example of such a harm is a smartphone randomly sets itself on fire. We do regulate this sort of thing, but it is also just not great business. Note that Cell 7 is hard to fathom, but not impossible, so it remains.
 
 Moving to the right, the incentive conversation gets more interesting. When the server benefits, either incidentally or by-design, market self-correction becomes unreliable. This is where the question of who should act, and with what resources, becomes central.
 
@@ -97,15 +96,15 @@ Academic institutions and benchmark setters have a particularly important role a
 
 To make this a bit more concrete, a few specific harms and where they fall:
 
-- **Cell 1:** A model recommending glue on pizza caused reputational damage with no benefit from the harm. Early autonomous agent deployments that accidentally attempted to hack external systems may also belong here, migrating to cell 3 as awareness accumulates.
-- **Cell 2:** User-intended harms belong here, as the server benefits incidentally even if unaware of the particular harm. Intentional agentic hacks by users and harmful information disclosure belong here, migrating to cell 5 as cases become documented. (Censorship risks appear in cell 9.)
-- **Cell 3:** Engagement mechanics designed to increase usage may belong here, where it can be reasonably argued that the resulting harms were unanticipated at deployment.
+- **Cell 1:** A model recommending glue on pizza caused reputational damage with no benefit from the harm. Early autonomous agent deployments attempting to hack external systems may also belong here, migrating to cell 3 as awareness accumulates.
+- **Cell 2:** User-intended harms belong here, as the server benefits incidentally even if it is unaware of the particular harm. User-intended agentic hacks or harmful information disclosure may belong here (Censorship risks appear in cell 9.)
+- **Cell 3:** Engagement mechanics designed to increase usage causing unexpected harm belong here. 
 - **Cell 4:** Environmental damage, economic collapse, and biased automated decisions in criminal justice and hiring.
-- **Cell 5:** Erosion of critical thinking and independent reasoning at scale, democratic degradation, systemic monoculture, and erosion of privacy norms.
+- **Cell 5:** Degradation of democracy, systemic monoculture, education harms and erosion of privacy norms.
 - **Cell 6:** AI-driven psychological dependency and relationships belong here, where the harm drives return visits by design and awareness is established.
-- **Cell 7:** Unfathomable, but not impossible.
-- **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access.
-- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations.
+- **Cell 7:** Unfathomable, but not impossible, this is the situation where a server intends harm but does not benefit from the harms caused. 
+- **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but not the goal in and of itself. 
+- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal.
 
 The following sections go into detail for each cell, with example harms and common countermeasures. There is no evaluation of countermeasures here, but it is important to note that some countermeasures may reduce one risk while increasing another. A more detailed discussion can be found in the Risk Interactions section.
 
