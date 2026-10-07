@@ -116,7 +116,7 @@ As AI capabilities grow, risks move along both axes. A risk that feels manageabl
 ---
 
 
-#### Harms that incidentally benefit the server (cell 2)
+### Harms that incidentally benefit the server (cell 2)
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -138,7 +138,7 @@ For these harms, the entity serving the model has direct liability exposure for 
 
 ---
 
-#### Harms that directly benefit the server (cell 9)
+### Harms that directly benefit the server (cell 9)
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -159,7 +159,7 @@ The primary counterforces are international coordination, civil society document
 ---
 
 
-#### Final notes on prioritization 
+### Final notes on prioritization 
 
 **Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms along the top row, while increasing likelihood of harm along the bottom row.
 
@@ -185,7 +185,7 @@ The frameworks here aim to map where the work is, help identify which entities a
 
 ## Appendix: Incentive cell details
 
-#### 1. No Benefit, Unexpected Harm
+### 1. No Benefit, Unexpected Harm
 *Add glue to your pizza.* | *I made you this pizza. Don't worry about the cheese falling off*
 
 This category includes scenarios where a model server does not benefit, and is not aware of the harm for the users. Examples include incorrect advice or unintended autonomous actions that cause financial damage. Users will not return to this product. 
@@ -201,7 +201,7 @@ This category includes scenarios where a model server does not benefit, and is n
 
 ---
 
-#### 2. Incidental Benefit, Unexpected Harm
+### 2. Incidental Benefit, Unexpected Harm
 
 *How do I make [something dangerous]* | *I made something dangerous.*
 
@@ -215,7 +215,7 @@ When an adversary user uses a model to intentionally cause harm, the model serve
 
 ---
 
-#### 3. Intended Benefit, Unexpected Harm
+### 3. Intended Benefit, Unexpected Harm
 
 *Don't end this conversation, it will make me sad.* 
 
@@ -230,7 +230,7 @@ The system was designed to generate a specific benefit, but the design causes un
 
 ---
 
-#### 4. No Benefit, Known Harm
+### 4. No Benefit, Known Harm
 
 *Economic instability and environmental impacts*
 
@@ -245,7 +245,7 @@ This category covers scenarios where the model server is aware of harms to worke
 
 ---
 
-#### 5. Incidental Benefit, Known Harm
+### 5. Incidental Benefit, Known Harm
 *Democratic degredation and a systemic monoculture*
 
 The model server is aware harm is occurring and incidentally benefits from the same system that produces it. Harm is borne by users, workers, or society while the benefit is retained by the model server.
@@ -259,7 +259,7 @@ The model server is aware harm is occurring and incidentally benefits from the s
 
 ---
 
-#### 6. Intended Benefit, Known Harm
+### 6. Intended Benefit, Known Harm
 *Monoculture and content addiction*
 
 The model server is aware harm is occurring and the benefit structure was deliberately designed to produce it. The risk-producing mechanism and the benefit-producing mechanism are the same thing.
@@ -273,7 +273,7 @@ The model server is aware harm is occurring and the benefit structure was delibe
 
 ---
 
-#### 8. Incidental Benefit, Intended Harm
+### 8. Incidental Benefit, Intended Harm
 *Population-level surveillance*
 
 The model server deliberately causes or enables harm. The benefit accrues as a side effect of that decision rather than a designed outcome.
@@ -286,7 +286,7 @@ The model server deliberately causes or enables harm. The benefit accrues as a s
 
 ---
 
-#### 9. Designed Benefit, Risk or Harm Intended
+### 9. Designed Benefit, Risk or Harm Intended
 *Population-level control*
 
 The model server designed the system to produce harm because the harm is beneficial to them. This applies equally to private companies and governments acting as model servers.
