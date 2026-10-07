@@ -109,8 +109,7 @@ Harms in AI safety are expected to be incredibly impactful to life on Earth. To 
 - **Moderate:** Meaningful harm to specific communities, groups, or sectors. Addressable with targeted policy or technical intervention. 
 - **Minor:** Limited harm to individuals or small groups. Recoverable without systemic intervention. 
 
-As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances. The examples below include proposed rankings for selected risks in two cells in the Incentives Matrix, before and after introducing recent capabilities (multi-agent collaboration, significant audio and video improvements).
-
+Risk matrices are not static! Advances in model capability increase both likelihood and severity, while progress in policy and governance push likelihood down.
 
 ---
 
@@ -120,7 +119,7 @@ As AI capabilities grow, risks move along both axes. A risk that feels manageabl
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/Cell2riskmat.png" alt="Risk Prioritization">
   <figcaption style='display: table-caption; caption-side: bottom;'>
-  Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
+  Notation: (A) marks a risk's original position, A' marks its position after recent capability advances (multi-agent collaboration, significant audio and video improvements), and A alone means it did not move. Harms:
   A=Bioweapon synthesis, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud</figcaption>
 </figure>
 
@@ -134,7 +133,7 @@ For these harms, the entity serving the model has direct market incentive and li
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/Cell9riskmat.png" alt="Risk Prioritization">
   <figcaption style='display: table-caption; caption-side: bottom;'>
-  Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
+  Notation: (A) marks a risk's original position, A' marks its position after recent capability advances (multi-agent collaboration, significant audio and video improvements), and A alone means it did not move.  Harms:
   A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source</figcaption>
 </figure>
 
