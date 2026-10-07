@@ -13,51 +13,36 @@ toc_sticky: true
 
 ## Incentives in AI Safety
 
-This document introduces the Incentives Matrix, a framework for discussing incentive structures in AI Safety and is meant to help identify which entities may be most likely to address key challenges in the space. 
+The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
 
-Consider harms resulting from deployment of advanced AI systems across two axes, from the perspective of the entity serving the model. First, we ask **How aware is the model server of the specific harm?** The model server is typically a private sector actor but may also be a government entity, and we take an expansive view. The major players in AI today have been largely collaborative in identifying and addressing many important harms, but it seems inadvisable to assume that entities hosting models *cannot* intend harm.  Server awareness of harms ranges from unaware to deliberate.
+Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
 
-**Awareness** means that at the time the model is served or deployed, the server either knew about this specific harm, or would reasonably be expected to have known given available evidence and prior incidents. This is anchored to the moment of deployment rather than an ongoing judgment, and it evolves. Once a specific harm is publicly documented, reasonable expectation applies to future deployments by any actor. Independent research and documentation are the mechanism by which unawareness becomes indefensible.
-
-Next, we ask **Does the model server benefit from the harm?**, where benefits may be in the form of profit, political power, or control of information. This scale ranges from no benefit (inclusive of negative benefit) to beneficial by design. Benefit from the harm means that the specific harm drives revenue, engagement, or return usage. 
-
-This framing highlights where private organizations are incentivized to produce solutions by market forces, and where they are not.
+This framing highlights where private organizations are incentivized to produce solutions by market forces, and where external organizations are most needed.
 
 ---
 
 ### Incentives Matrix: A Model-Server's Perspective
 
-```
-                              MODEL SERVER BENEFIT
-                     BENEFIT: NONE      BENEFIT: INCIDENTAL  BENEFIT: BY DESIGN
-                  ┌─────────────────┬──────────────────┬───────────────────────┐
-  SERVER          │  1. No Benefit, │  2. Incidental   │  3. Intended Benefit, │
-  UNAWARE         │     Unexpected    │     Benefit,     │     Unexpected Harm     │
-  OF HARM         │     Harm        │     Unexpected Harm|                       │
-                  ├─────────────────┼──────────────────┼───────────────────────┤
-SERVER            │  4. No Benefit, │  5. Incidental   │  6. Intended Benefit, │
-AWARE OF HARM     │     Known Harm  │     Benefit,     │     Known Harm        │
-                  │                 │     Known Harm   │                       │
-                  ├─────────────────┼──────────────────┼───────────────────────┤
-  SERVER          │  7. No Benefit, │  8. Incidental   │  9. Intended Benefit, │
-  INTENDED        │   Intended Harm │     Benefit,     │     Harm              │
-  HARM            │       [EMPTY]   │     Intended Harm│     Intended          │
-                  └─────────────────┴──────────────────┴───────────────────────┘
-```
+<figure style='display: table'>
+  <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
+  <figcaption style='display: table-caption; caption-side: bottom;'>
+  Cell color indicates likely motivations of server to surface and address harms. Green: highly motivated; Yellow: mixed motivations; Red: unmotivated. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
+</figure>
 
 
-Items in the first column broadly describe a poor product and will be improved by the company building and serving the model. A smartphone battery that causes fires will run up against regulations, but it is also just bad business. Note that an entity intending harm without benefit (Cell 7) is hard to fathom, but not impossible, so it remains.
+
+<!-- Items in the first column broadly describe a poor product and will be improved by the company building and serving the model. A smartphone battery that causes fires will run up against regulations, but it is also just bad business. Note that an entity intending harm without benefit (Cell 7) is hard to fathom, but not impossible, so it remains.
 
 Moving to the right, the incentive conversation gets more interesting. When the server benefits, either incidentally or by-design, market self-correction becomes unreliable. This is where the question of who should act, and with what resources, becomes central.
 
-The rows describe the awareness of the entity hosting and serving the model of the particular harms caused. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis. 
+The rows describe the awareness of the entity hosting and serving the model of the particular harms caused. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis.  -->
 
-*This framing assumes that there is an entity serving a model with a motivation (typically profit or power). A case has been made that an open source model is  inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.*
-
-
+This framing assumes that there is an entity serving a model with a motivation (typically profit or power). A case has been made that an open source model is  inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.
 
 
-### Example Harms 
+
+
+<!-- ### Example Harms 
 
 To make this a bit more concrete, consider the following specific harms and where they land in the Incentive Matrix. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. 
 
@@ -69,14 +54,26 @@ To make this a bit more concrete, consider the following specific harms and wher
 - **Cell 6:** AI-driven psychological dependency and relationships belong here, where the harm drives return visits by design and awareness is established.
 - **Cell 7:** Unfathomable, but not impossible, this is the situation where a server intends harm but does not benefit from the harms caused. 
 - **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but it is not the goal in and of itself. 
-- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal.
-
-More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. 
+- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal. -->
 
 
----
 
-### Who Is Best Positioned to Act
+
+
+### Consider Common Research Threads Today
+
+
+<figure style='display: table'>
+  <img src="{{site.baseurl}}/assets/images/HarmAxes-ResearchEffort.png" alt="Motivations in AI Safety">
+  <figcaption style='display: table-caption; caption-side: bottom;'>
+  A significant portion of AI safety research today is aligned with internal motivations of model creators and servers. </figcaption>
+</figure>
+
+
+If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.
+
+
+<!-- ### Who Is Best Positioned to Act
 
 The matrix highlights opportunities for harm and risk mitigation. Each cell contains real harms that need to be addressed, and each person or institution in the AI Safety space has limited resources with which to address harms. **If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.**
 
@@ -102,33 +99,26 @@ The matrix highlights opportunities for harm and risk mitigation. Each cell cont
 ░░░░  Regulators, policy bodies, government (liability and criminal law)
 ▒▒▒▒  International bodies, competing governments, open source communities,
       whistleblowers
-```
+``` -->
 
 ---
 
 ## Prioritizing Risks 
 
-Vital harms that may arise from AI are not all equal. A traditional risk matrix plots risks on **likelihood** and **severity** axes.  In AI Safety conversations today, some risks may feel less likely than they are because we implicitly trust the model server to prevent them. Explicitly mapping harms on this matrix can uplift questions of standards, protections, or assurances that could be put in place today. 
+Harms that may arise from AI are not all equal. A traditional risk matrix plots risks on **likelihood** and **severity** axes.  Today, some risks seem less urgent because we implicitly trust the model server to prevent them. Explicitly mapping harms can highlight questions of standards, protections, or assurances that could be put in place today. 
 
-Harms in AI safety are expected to be incredibly impactful to life on Earth. As such, in order to differentiate them along the severity axis, the following definitions are used:
+Harms in AI safety are expected to be incredibly impactful to life on Earth. To differentiate them along the severity axis, the following definitions are used:
+- **Catastrophic:** Irreversible harm at civilizational scale. 
+- **Major:** Severe harm to large populations, institutions, or democratic systems. Recoverable in principle but with significant long-term consequences. 
+- **Moderate:** Meaningful harm to specific communities, groups, or sectors. Addressable with targeted policy or technical intervention. 
+- **Minor:** Limited harm to individuals or small groups. Recoverable without systemic intervention. 
+- **Negligible:** Harm is real but inconsequential at any meaningful scale. 
 
-- **Catastrophic:** Irreversible harm at civilizational scale. Society cannot recover to a prior state. Examples: human extinction or near-extinction, permanent global authoritarian control with no path to reversal, permanent loss of human agency over AI systems.
-- **Major:** Severe harm to large populations, institutions, or democratic systems. Recoverable in principle but with significant long-term consequences. Examples: large-scale election interference, mass casualties from a targeted attack, collapse of a national financial system.
-- **Moderate:** Meaningful harm to specific communities, groups, or sectors. Addressable with targeted policy or technical intervention. Examples: biased hiring systems affecting a demographic group, a significant data breach, targeted harassment campaigns.
-- **Minor:** Limited harm to individuals or small groups. Recoverable without systemic intervention. Examples: incorrect advice causing a localized bad outcome, academic fraud by an individual user.
-- **Negligible:** Harm is real but inconsequential at any meaningful scale. Included for completeness but not a prioritization concern.
+
+As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances. The examples below include proposed rankings for selected risks in two cells in the Incentives Matrix, before and after introducing recent capabilities (multi-agent collaboration, significant audio and video improvements).
 
 
----
-### Increasing AI Capability Shifts Risk
-
-Risk matrices are never static, but this is particularly true in a fast-moving technological revolution. As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances.  
-
-The examples below include proposed rankings for selected risks in two distant cells in the Incentives Matrix, before and after introducing recent capabilities including agentic action, multi-agent collaboration, audio and video modalities, real-world tool access, and API availability.
-
-*Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.*
-
-#### Risks in Cell 2: Incidental Benefit, Unexpected Harm
+#### Harms that incidentally benefit the server (cell 2)
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -142,16 +132,15 @@ MODERATE       │  (H)(I)    │  C  (E)(G)  │  E'  G'(J)  │  H'  J'  (K)  
 MINOR          │            │             │             │  M             │
                └────────────┴─────────────┴─────────────┴────────────────┘
                Example demonstrating tool utility - actual designations will vary based on institutional perspective. 
+               Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.
 ```
 *A=Bioweapons, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud*
 
-For each of these risks, the entity serving the model has direct liability exposure for risks in this cell. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces the work through criminal liability for users and liability standards for enablers.
-
-The risks that warrant independent watchdog research and regulatory attention may be particularly valuable where liability is diffuse or hard to attribute (C and E). A warrants and receives significant collaborative  attention as the model server's incentives alone are insufficient given the irreversibility of the harm.
+For these harms, the entity serving the model has direct liability exposure for risks in this cell. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces the work through criminal liability for users and liability standards for enablers. 
 
 ---
 
-#### Risks in Cell 9: Intended Benefit, Intended Harm
+### Harms that directly benefit the server (cell 9)
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -165,20 +154,15 @@ MODERATE       │            │  (E)        │  (D)  E'    │               
 ```
 *A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source*
 
-Unlike cell 2, these harms are intentional. No self-correcting mechanism exists where the server explicitly intends harm and has designed the product so that they benefit directly from harms. Domestic and international regulation are insufficient when that actor is the state, and liability frameworks do not apply. 
+These harms are intentional, and the entire matrix sits in the likely-to-almost-certain range. Capability advances push severity upward. 
 
-The entire matrix sits in the likely-to-almost-certain range. Capability advances push severity upward rather than increasing likelihood. The primary counterforces are international coordination, civil society documentation, and competing open infrastructure. European companies and policymakers have emerged as a meaningful force on the latter, though not yet sufficient at scale. Every item in this matrix warrants urgent independent research and regulatory attention, and that urgency grows with capability.
+The primary counterforces are international coordination, civil society documentation, and competitive open infrastructure. European companies and policymakers are making meaningful progress, but every harm warrants urgent independent research and regulatory attention. That urgency grows with capability.
 
-### Risk Interactions
+### Final notes on prioritization 
 
-The risks in this framework are intertwined such that how we mitigate one can increase another. For example, restricting human access to (true) harmful information is one way to mitigate the risk of bioweapon synthesis. It would reduce a low-likelihood catastrophic risk, but would certainly increase the likelihood of censorship and political manipulations.  It seems important for AI Safety teams to explicitly map how countermeasures may impact other harms.
+**Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms along the top row, while increasing likelihood of harm along the bottom row.
 
-
-### Risk Matrix Lessons, Opportunities and Next Steps
-
-The risk matrix framework can support any organization in  prioritization. The matrix entries above are example placements of commonly discussed harms in AI Safety. Properly assessing likelihood and severity may require different people to answer well. Those best placed to assess how a financial crisis cascades or a biological threat spreads are rarely the same people building models and doing AI research.
-
-The most useful risk matrix would draw on AI capability researchers, domain experts in relevant harm areas (epidemiologists, economists, security experts, public health officials), and policy teams who understand institutional and societal response, to place risks along each axis. 
+**Harm Prioritization** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI experts who can accurately assess likelihood. The most useful risk matrix would draw on both AI experts and domain experts in relevant harm and response areas. 
 
 ## Conclusion
 
@@ -201,7 +185,7 @@ This category includes scenarios where a model server does not benefit, and is n
 - **Beneficiary:** None
 - **Harm falls on:** Users, third parties, infrastructure
 - **Who can act and why:** Model server and trainer are strongly motivated; government can reinforce via liability standards
-- **Example Harms:** Incorrect advice causing real-world harm, unintended autonomous actions causing physical or financial damage, bias from training data artifacts, misspecified agent behavior
+- **Example Harms:** Incorrect advice causing real-world harm, unintended autonomous actions causing physical or financial damage, misspecified agent behavior
 - **Common Countermeasures:** * Red-teaming, evaluations, interpretability, output filtering, human-in-the-loop review, liability frameworks, incident disclosure, confidence outputs
 
 *Countermeasures are listed throughout this document as reference points, not recommendations. Their effectiveness varies significantly by context, and some may reduce one risk while increasing the likelihood or severity of another. The final section of the Risk Matrix discussion addresses this directly.
