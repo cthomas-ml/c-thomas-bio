@@ -21,7 +21,7 @@ This framing highlights where private organizations are incentivized to produce 
 
 ---
 
-### Incentives Matrix: A Model-Server's Perspective
+### Incentives Matrix: a model-server's perspective
 
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
@@ -60,7 +60,7 @@ To make this a bit more concrete, consider the following specific harms and wher
 
 
 
-### Consider Common Research Threads Today
+### Consider common research threads today
 
 
 <figure style='display: table'>
@@ -103,7 +103,7 @@ The matrix highlights opportunities for harm and risk mitigation. Each cell cont
 
 ---
 
-## Prioritizing Risks 
+## Prioritizing risks within a cell
 
 Harms that may arise from AI are not all equal. A traditional risk matrix plots risks on **likelihood** and **severity** axes.  Today, some risks seem less urgent because we implicitly trust the model server to prevent them. Explicitly mapping harms can highlight questions of standards, protections, or assurances that could be put in place today. 
 
@@ -116,6 +116,9 @@ Harms in AI safety are expected to be incredibly impactful to life on Earth. To 
 
 
 As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances. The examples below include proposed rankings for selected risks in two cells in the Incentives Matrix, before and after introducing recent capabilities (multi-agent collaboration, significant audio and video improvements).
+
+
+---
 
 
 #### Harms that incidentally benefit the server (cell 2)
@@ -140,7 +143,7 @@ For these harms, the entity serving the model has direct liability exposure for 
 
 ---
 
-### Harms that directly benefit the server (cell 9)
+#### Harms that directly benefit the server (cell 9)
 
 ```
                   UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
@@ -158,11 +161,19 @@ These harms are intentional, and the entire matrix sits in the likely-to-almost-
 
 The primary counterforces are international coordination, civil society documentation, and competitive open infrastructure. European companies and policymakers are making meaningful progress, but every harm warrants urgent independent research and regulatory attention. That urgency grows with capability.
 
+---
+
+
 ### Final notes on prioritization 
 
 **Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms along the top row, while increasing likelihood of harm along the bottom row.
 
 **Harm Prioritization** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI experts who can accurately assess likelihood. The most useful risk matrix would draw on both AI experts and domain experts in relevant harm and response areas. 
+
+
+---
+
+
 
 ## Conclusion
 
@@ -174,7 +185,10 @@ Capability advances move nearly every risk up and to the right. The no-benefit c
 The frameworks here aim to map where the work is, help identify which entities are best positioned, and make visible what goes unaddressed when the conversation is driven primarily by those with the most to gain.
 
 
-## Appendix: Incentive Cell Details
+---
+
+
+## Appendix: Incentive cell details
 
 #### 1. No Benefit, Unexpected Harm
 *Add glue to your pizza.* | *I made you this pizza. Don't worry about the cheese falling off*
