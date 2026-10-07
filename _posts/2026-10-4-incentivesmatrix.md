@@ -11,15 +11,17 @@ toc_sticky: true
 ---
 
 
+
+## Incentives in AI Safety
+
+The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
+
+
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Cell color indicates likely motivations of server to surface and address harms. Green: highly motivated; Yellow: mixed motivations; Red: unmotivated. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
 </figure>
-
-## Incentives in AI Safety
-
-The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
 
 Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
 
@@ -120,7 +122,8 @@ As AI capabilities grow, risks move along both axes. A risk that feels manageabl
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
   A=Bioweapon synthesis, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud</figcaption>
-<figure>
+</figure>
+
 
 For these harms, the entity serving the model has direct market incentive and liability exposure. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Independent efforts are needed to ensure compliance and document concerning findings. Government reinforces the work through criminal liability for users and liability standards for enablers. 
 
@@ -133,7 +136,7 @@ For these harms, the entity serving the model has direct market incentive and li
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
   A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source</figcaption>
-<figure>
+</figure>
 
 
 Many intentional harms sit in the likely-to-almost-certain range when evaluating AI capability. Policy progress pushes likelihood down, while advances in model capability push severity upward. 
