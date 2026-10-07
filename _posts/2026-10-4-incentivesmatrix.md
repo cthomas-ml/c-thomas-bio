@@ -11,24 +11,19 @@ toc_sticky: true
 ---
 
 
-## Incentives in AI Safety
-
-The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
-
-Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
-
-This framing highlights where private organizations are incentivized to produce solutions by market forces, and where external organizations are most needed.
-
----
-
-### Incentives Matrix: a model-server's perspective
-
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Cell color indicates likely motivations of server to surface and address harms. Green: highly motivated; Yellow: mixed motivations; Red: unmotivated. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
 </figure>
 
+## Incentives in AI Safety
+
+The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
+
+Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
+
+This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where private organizations are clearly incentivized to address harms. A case has been made that an open source model is  inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.
 
 
 <!-- Items in the first column broadly describe a poor product and will be improved by the company building and serving the model. A smartphone battery that causes fires will run up against regulations, but it is also just bad business. Note that an entity intending harm without benefit (Cell 7) is hard to fathom, but not impossible, so it remains.
@@ -37,7 +32,7 @@ Moving to the right, the incentive conversation gets more interesting. When the 
 
 The rows describe the awareness of the entity hosting and serving the model of the particular harms caused. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis.  -->
 
-This framing assumes that there is an entity serving a model with a motivation (typically profit or power). A case has been made that an open source model is  inherently dangerous because anyone could remove safety guardrails and use it for nefarious activity. If someone deploys a modified open source model publicly, they are a model server, this matrix applies and governance response likely resembles how we address harmful content distribution on the dark web. Alternatively, if the model is self-hosted and never exposed publicly, the threat surface narrows considerably. An actor capable of doing this meaningfully is likely capable of training from scratch.
+
 
 
 
@@ -164,7 +159,7 @@ The primary counterforces are international coordination, civil society document
 ---
 
 
-### Final notes on prioritization 
+#### Final notes on prioritization 
 
 **Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms along the top row, while increasing likelihood of harm along the bottom row.
 
