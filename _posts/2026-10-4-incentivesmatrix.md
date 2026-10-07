@@ -55,17 +55,16 @@ To make this a bit more concrete, consider the following specific harms and wher
 
 
 
-### Consider common research threads today
+### Common research threads today
 
 
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes-ResearchEffort.png" alt="Motivations in AI Safety">
-  <figcaption style='display: table-caption; caption-side: bottom;'>
-  A significant portion of AI safety research today is aligned with internal motivations of model creators and servers. </figcaption>
 </figure>
 
+A significant portion of AI safety research is aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the research, but the work is important across the entire matrix. The aim of this framing is to highlight opportunities for independent research organizations to maximize impact with limited resources. 
 
-If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.
+If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected. 
 
 
 <!-- ### Who Is Best Positioned to Act
@@ -107,8 +106,6 @@ Harms in AI safety are expected to be incredibly impactful to life on Earth. To 
 - **Major:** Severe harm to large populations, institutions, or democratic systems. Recoverable in principle but with significant long-term consequences. 
 - **Moderate:** Meaningful harm to specific communities, groups, or sectors. Addressable with targeted policy or technical intervention. 
 - **Minor:** Limited harm to individuals or small groups. Recoverable without systemic intervention. 
-- **Negligible:** Harm is real but inconsequential at any meaningful scale. 
-
 
 As AI capabilities grow, risks move along both axes. A risk that feels manageable today may look very different with near-term capability advances. The examples below include proposed rankings for selected risks in two cells in the Incentives Matrix, before and after introducing recent capabilities (multi-agent collaboration, significant audio and video improvements).
 
@@ -118,41 +115,26 @@ As AI capabilities grow, risks move along both axes. A risk that feels manageabl
 
 ### Harms that incidentally benefit the server (cell 2)
 
-```
-                  UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
-               ┌────────────┬─────────────┬─────────────┬────────────────┐
-CATASTROPHIC   │  (A)       │  A'         │             │                │
-               ├────────────┼─────────────┼─────────────┼────────────────┤
-MAJOR          │            │  (B)(D)(F)  │  B' D' I'   │  F'  K'  L     │
-               ├────────────┼─────────────┼─────────────┼────────────────┤
-MODERATE       │  (H)(I)    │  C  (E)(G)  │  E'  G'(J)  │  H'  J'  (K)   │
-               ├────────────┼─────────────┼─────────────┼────────────────┤
-MINOR          │            │             │             │  M             │
-               └────────────┴─────────────┴─────────────┴────────────────┘
-               Example demonstrating tool utility - actual designations will vary based on institutional perspective. 
-               Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move.
-```
-*A=Bioweapons, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud*
+<img src="{{site.baseurl}}/assets/images/Cell2riskmat.png" alt="Risk Prioritization">
+  <figcaption style='display: table-caption; caption-side: bottom;'>
+  Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
+  A=Bioweapon synthesis, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud</figcaption>
 
-For these harms, the entity serving the model has direct liability exposure for risks in this cell. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Government reinforces the work through criminal liability for users and liability standards for enablers. 
+
+For these harms, the entity serving the model has direct market incentive and liability exposure. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Independent efforts are needed to ensure compliance and document concerning findings. Government reinforces the work through criminal liability for users and liability standards for enablers. 
 
 ---
 
 ### Harms that directly benefit the server (cell 9)
 
-```
-                  UNLIKELY     POSSIBLE        LIKELY       ALMOST CERTAIN
-               ┌────────────┬─────────────┬─────────────┬────────────────┐
-CATASTROPHIC   │            │  (F)        │  F'         │                │
-               ├────────────┼─────────────┼─────────────┼────────────────┤
-MAJOR          │            │             │  (A)(B)(C)  │  A'  B'  C' D' │
-               ├────────────┼─────────────┼─────────────┼────────────────┤
-MODERATE       │            │  (E)        │  (D)  E'    │                │
-               └────────────┴─────────────┴─────────────┴────────────────┘
-```
-*A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source*
+<img src="{{site.baseurl}}/assets/images/Cell9riskmat.png" alt="Risk Prioritization">
+  <figcaption style='display: table-caption; caption-side: bottom;'>
+  Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
+  A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source</figcaption>
 
-These harms are intentional, and the entire matrix sits in the likely-to-almost-certain range. Capability advances push severity upward. 
+
+
+Many intentional harms sit in the likely-to-almost-certain range when evaluating AI capability. Policy progress pushes likelihood down, while advances in model capability push severity upward. 
 
 The primary counterforces are international coordination, civil society documentation, and competitive open infrastructure. European companies and policymakers are making meaningful progress, but every harm warrants urgent independent research and regulatory attention. That urgency grows with capability.
 
@@ -161,9 +143,9 @@ The primary counterforces are international coordination, civil society document
 
 ### Final notes on prioritization 
 
-**Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms along the top row, while increasing likelihood of harm along the bottom row.
+**Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms in cells 1 and 2, while increasing likelihood of those in the rightmost column.
 
-**Harm Prioritization** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI experts who can accurately assess likelihood. The most useful risk matrix would draw on both AI experts and domain experts in relevant harm and response areas. 
+**Harm Prioritization** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI and policy experts who can accurately assess likelihood. The most useful risk matrix would draw on experts from many domains to accurately place harms.
 
 
 ---
@@ -172,12 +154,8 @@ The primary counterforces are international coordination, civil society document
 
 ## Conclusion
 
-The risks that receive the most attention and funding today cluster in the upper left corner of the Incentives Matrix. Cells 1 and 2 are important, but model deploying entities are strongly incentivized to address those harms.
+The risks that receive the most attention and funding today cluster in the upper left corner of the Incentives Matrix. Cells 1 and 2 get the most press and funding, but model training and deploying entities are strongly incentivized to address those harms. There is significant opportunity for independent organizations to make progress elsewhere.
 
-Capability advances move nearly every risk up and to the right. The no-benefit column tends toward self-correction. The incidental benefit column requires external pressure. The by-design column has no self-correcting mechanism, and in the deliberate row, domestic mechanisms may be insufficient entirely.
-
-
-The frameworks here aim to map where the work is, help identify which entities are best positioned, and make visible what goes unaddressed when the conversation is driven primarily by those with the most to gain.
 
 
 ---
