@@ -115,11 +115,12 @@ As AI capabilities grow, risks move along both axes. A risk that feels manageabl
 
 ### Harms that incidentally benefit the server (cell 2)
 
-<img src="{{site.baseurl}}/assets/images/Cell2riskmat.png" alt="Risk Prioritization">
+<figure style='display: table'>
+  <img src="{{site.baseurl}}/assets/images/Cell2riskmat.png" alt="Risk Prioritization">
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
   A=Bioweapon synthesis, B=Infrastructure attacks, C=Drug synthesis, D=CSAM, E=Targeted stalking, F=Malware, G=Account compromise, H=Voice cloning fraud, I=Non-consensual imagery, J=Credential stuffing, K=Spear phishing, L=Radicalization, M=Academic fraud</figcaption>
-
+<figure>
 
 For these harms, the entity serving the model has direct market incentive and liability exposure. The private sector is actively investing in red-teaming, guardrails, and access controls across the moderate-to-major band. Independent efforts are needed to ensure compliance and document concerning findings. Government reinforces the work through criminal liability for users and liability standards for enablers. 
 
@@ -127,11 +128,12 @@ For these harms, the entity serving the model has direct market incentive and li
 
 ### Harms that directly benefit the server (cell 9)
 
-<img src="{{site.baseurl}}/assets/images/Cell9riskmat.png" alt="Risk Prioritization">
+<figure style='display: table'>
+  <img src="{{site.baseurl}}/assets/images/Cell9riskmat.png" alt="Risk Prioritization">
   <figcaption style='display: table-caption; caption-side: bottom;'>
   Notation: (A) marks a risk's original position, A' marks its position after capability advances, and A alone means it did not move. 
   A = Ideology or worldview enforcement, B = Propaganda and coordinated information manipulation, C = Surveillance against users or dissidents, D = Behavioral data extraction for intelligence or control, E = Models redirecting users to server's own products while presenting as neutral, F = Designed dependency on a single information source</figcaption>
-
+<figure>
 
 
 Many intentional harms sit in the likely-to-almost-certain range when evaluating AI capability. Policy progress pushes likelihood down, while advances in model capability push severity upward. 
