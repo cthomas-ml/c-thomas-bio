@@ -20,7 +20,7 @@ The Incentives Matrix considers harms resulting from deployment of advanced AI s
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
   <figcaption style='display: table-caption; caption-side: bottom;'>
-  Cell color indicates likely motivations of server to surface and address harms. Green: highly motivated; Yellow: mixed motivations; Red: unmotivated. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
+  Cell color indicates likely motivations of server to surface and address harms. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
 </figure>
 
 Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
@@ -28,74 +28,37 @@ Harms are categorized along two axes. The **Awareness** axis: at the time the mo
 This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where the profit motive aligns with addressing harms. There are those who believe that open source models are inherently dangerous because a bad actor could remove safety guardrails to enable nefarious use. That actor would either deploy the model, in which case this framework applies, or they would use it internally. Internal use narrows the threat surface considerably, and an actor with the capability and resources to do this meaningfully would not require open source weights.
 
 
-<!-- Items in the first column broadly describe a poor product and will be improved by the company building and serving the model. A smartphone battery that causes fires will run up against regulations, but it is also just bad business. Note that an entity intending harm without benefit (Cell 7) is hard to fathom, but not impossible, so it remains.
 
-Moving to the right, the incentive conversation gets more interesting. When the server benefits, either incidentally or by-design, market self-correction becomes unreliable. This is where the question of who should act, and with what resources, becomes central.
+### Key research and governance efforts
 
-The rows describe the awareness of the entity hosting and serving the model of the particular harms caused. The top row is inherently transient. A server can only remain unaware of a specific harm for as long as that harm goes undocumented. Once a harm is publicly established, reasonable expectation applies to any server deploying thereafter, and the harm migrates up the awareness axis.  -->
+A significant portion of AI safety efforts are aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the work, but the entire matrix matters. Key areas for independent researchers and governance experts include 
 
-
-
-
-
-
-<!-- ### Example Harms 
-
-To make this a bit more concrete, consider the following specific harms and where they land in the Incentive Matrix. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. 
-
-- **Cell 1:** A model recommending to put glue on pizza caused reputational damage with no benefit. Autonomous agents hacking external systems without instruction. These risks migrate to cell 3 as awareness accumulates.
-- **Cell 2:** User-intended harms, as the server benefits incidentally even if it is unaware of the particular harm. Intentional agentic hacks. Harmful information disclosure may belong here (censorship risks appear in cell 9.)
-- **Cell 3:** Some engagement mechanics designed to increase usage that cause unexpected harm.
-- **Cell 4:** Environmental damage, economic collapse, and biased automated decisions in criminal justice and hiring.
-- **Cell 5:** Degradation of democracy, systemic monoculture, education harms and erosion of privacy norms.
-- **Cell 6:** AI-driven psychological dependency and relationships belong here, where the harm drives return visits by design and awareness is established.
-- **Cell 7:** Unfathomable, but not impossible, this is the situation where a server intends harm but does not benefit from the harms caused. 
-- **Cell 8:** Deliberate output adjustment to comply with government censorship in exchange for market access. The harm to users is deliberate, but it is not the goal in and of itself. 
-- **Cell 9:** Control of information flow, propaganda and election interference at scale, anti-competitive product recommendations. Here the harm is the goal. -->
-
-
-
-
-
-### Common research threads today
+- Long-term effects on critical thinking and workforce skills.
+- Concentration of information and infrastructure.
+- Financial exposure from circular investment and large-scale economic instability.
+- Climate and local environmentalal impact.
+- Deliberate output manipulation and surveillance. 
 
 
 <figure style='display: table'>
-  <img src="{{site.baseurl}}/assets/images/HarmAxes-ResearchEffort.png" alt="Motivations in AI Safety">
+  <figcaption style='display: table-caption; caption-side: top; font-weight: bold; margin-bottom: 8px;'>
+    Safety Research Areas: Evidence
+  </figcaption>
+  <img src="{{site.baseurl}}/assets/images/HarmAxes-Research.png" alt="Motivations in AI Safety">
 </figure>
 
-A significant portion of AI safety research is aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the research, but the work is important across the entire matrix. The aim of this framing is to highlight opportunities for independent research organizations to maximize impact with limited resources. 
+
+<figure style='display: table'>
+  <figcaption style='display: table-caption; caption-side: top; font-weight: bold; margin-bottom: 8px;'>
+    Safety Governance Areas: Action
+  </figcaption>
+  <img src="{{site.baseurl}}/assets/images/HarmAxes-Policy.png" alt="Motivations in AI Safety">
+</figure>
+
+Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. 
+
 
 If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected. 
-
-
-<!-- ### Who Is Best Positioned to Act
-
-The matrix highlights opportunities for harm and risk mitigation. Each cell contains real harms that need to be addressed, and each person or institution in the AI Safety space has limited resources with which to address harms. **If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected.**
-
-
-
-```
-                              MODEL SERVER BENEFIT
-                  BENEFIT: NONE      BENEFIT: INCIDENTAL    BENEFIT: BY DESIGN
-                ┌──────────────────┬────────────────────┬─────────────────────┐
-  SERVER        │        1         │         2          │          3          │
-  UNAWARE       │  ████████████▓   │  ████░░░░▓▓▓▓▓▓    │  ░░░░░░▓▓▓▓▓▓▓▓▓  │
-                ├──────────────────┼────────────────────┼─────────────────────┤
-  SERVER        │        4         │         5          │          6          │
-  AWARE         │  ██████░░░░▓▓▓▓  │  ░░░░░░▓▓▓▓▓▓▓▓    │  ░░░░▓▓▓▓▓▒▒▒▒▒▒  │
-                ├──────────────────┼────────────────────┼─────────────────────┤
-  SERVER        │        7         │         8          │          9          │
-  DELIBERATE    │    [EMPTY]       │  ░░░░▓▓▓▒▒▒▒▒▒▒    │  ░░░▓▓▓▒▒▒▒▒▒▒▒▒  │
-                └──────────────────┴────────────────────┴─────────────────────┘
-
-████  Model server, trainer, internal safety teams, standards bodies
-▓▓▓▓  Academic institutions, benchmark setters, investigative journalists,
-      civil society, NGOs, independent researchers
-░░░░  Regulators, policy bodies, government (liability and criminal law)
-▒▒▒▒  International bodies, competing governments, open source communities,
-      whistleblowers
-``` -->
 
 ---
 
@@ -149,7 +112,7 @@ The primary counterforces are international coordination, civil society document
 
 **Risk Interactions** The risks in this framework are intertwined such that how we mitigate one can increase another. Restricting human access to (true) harmful information may mitigate the risk of bioweapon synthesis at the cost of increasing liklihood of censorship and political manipulations. Similarly, significant advances in interpretability and model steering will reduce harms in cells 1 and 2, while increasing likelihood of those in the rightmost column.
 
-**Harm Prioritization** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI and policy experts who can accurately assess likelihood. The most useful risk matrix would draw on experts from many domains to accurately place harms.
+**Divers expertise for proper placement** The experts best positioned to assess severity of a harm, eg. how a financial crisis cascades or a biological threat spreads, are not likely to be the same as the AI and policy experts who can accurately assess likelihood. The most useful risk matrix would draw on experts from many domains to accurately place harms.
 
 
 ---
@@ -207,7 +170,7 @@ The system was designed to generate a specific benefit, but the design causes un
 - **Benefit:** Model server
 - **Harm falls on:** Users, communities, democratic systems
 - **Who can act and why:** Model server has limited incentive; independent researchers and civil society must surface and document harms, and a legal framework is needed to enforce user protections.
-- **Example Harms:** Engagement-driven radicalization, emotional dependency from retention-optimized design, bias and discrimination from unexamined training data, erosion of professional expertise pipelines
+- **Example Harms:** Emotional dependency from retention-optimized design, bias and discrimination from unexamined training data
 - **Common Countermeasures:** Independent harm audits, bias testing and fairness benchmarks, third-party dataset audits, training data provenance disclosure
 
 ---
@@ -222,8 +185,8 @@ This category covers scenarios where the model server is aware of harms to worke
 - **Benefit:** None
 - **Harm falls on:** Workers, local communities, future generations, environment
 - **Who can act and why:** Model server has mixed motivation; policy bodies can establish standards and penalties
-- **Example Harms:** Large-scale climate impacts, mass labor displacement at societal scale, systemic economic instability as a downstream consequence of displacement and infrastructure dependency, biased automated decisions in criminal justice and hiring
-- **Common Countermeasures:** Environmental impact assessments (regulators), workforce impact disclosure (regulators), labor transition frameworks (governments), systemic risk monitoring frameworks for AI infrastructure dependency (regulators, central banks), bias testing and fairness requirements for automated decision systems (regulators), mandatory human review for high-stakes automated decisions in criminal justice and hiring (regulators)
+- **Example Harms:** Large-scale climate impacts, mass labor displacement at societal scale, systemic economic instability, biased automated decisions in criminal justice and hiring
+- **Common Countermeasures:** Environmental impact assessments (regulators), workforce impact disclosure (regulators), labor transition frameworks (governments), bias testing and fairness requirements for automated decision systems (regulators), mandatory human review for high-stakes automated decisions in criminal justice and hiring (regulators)
 
 ---
 
@@ -249,7 +212,7 @@ The model server is aware harm is occurring and the benefit structure was delibe
 - **Actor and beneficiary:** Model server
 - **Harm falls on:** Users who cannot identify or opt out of the architecture, communities, democratic systems, public investors
 - **Who can act and why:** Model server has no incentive; independent auditors, civil society, and whistleblowers are the primary path
-- **Example Harms:** Concentration of power and monoculture, engagement farming, deliberately engineered compulsive use, local environmental harms near data centers (water stress, land use, carbon emissions), deliberately opaque personalization, suppression of internal safety findings for commercial reasons, economic collapse due to circular investment structures
+- **Example Harms:** Concentration of power, engagement farming, deliberately engineered compulsive use, local environmental harms near data centers, deliberately opaque personalization, economic collapse due to circular investment structures
 - **Common Countermeasures:** Sovereign and open model infrastructure approaches (companies, governments), independent technical audits with platform data access (regulators, NGOs), mandatory disclosure of internal safety research (regulators), whistleblower protections (governments), financial disclosure requirements (regulators), energy and water use standards (regulators)
 
 
@@ -263,8 +226,8 @@ The model server deliberately causes or enables harm. The benefit accrues as a s
 - **Actor and beneficiary:** Model server -- market access, competitive positioning, or regulatory favor as a side effect
 - **Harm falls on:** Users, competitors, democratic institutions
 - **Who can act and why:** Model server has no incentive; civil society, government, and international bodies
-- **Example Harms:** Deliberate output adjustment to comply with government censorship in exchange for market access, deliberate compliance with surveillance requirements that compromise user privacy, deliberate downgrading of safety features for competitive reasons, politically selective content filtering in specific markets
-- **Common Countermeasures:** Output auditing (civil society, regulators), extraterritorial regulatory frameworks (governments), minimum content standards (international bodies), competitive market oversight (regulators), sovereign and open model infrastructure approaches (companies, governments)
+- **Example Harms:** Deliberate output adjustment to comply with government censorship in exchange for market access, deliberate compliance with surveillance requirements that compromise user privacy, politically selective content filtering in specific markets
+- **Common Countermeasures:** Output auditing (civil society, regulators), extraterritorial regulatory frameworks (governments), minimum content standards (international bodies), sovereign and open model infrastructure approaches (companies, governments)
 
 ---
 
@@ -276,5 +239,5 @@ The model server designed the system to produce harm because the harm is benefic
 - **Actor and beneficiary:** Model server
 - **Harm falls on:** Users with no ability to opt out, those subject to surveillance or targeting, democratic institutions, free information markets
 - **Who can act and why:** Model server has no incentive; for private actors, domestic regulation and civil society; for state actors, international bodies, civil society, and competing governments
-- **Example Harms:** Ideology or worldview enforcement through controlled model outputs, propaganda and coordinated information manipulation at scale, surveillance infrastructure deployed against users or dissidents, behavioral data extraction for intelligence or control purposes, models redirecting users to server's own products or interests while presenting as neutral, designed dependency on a single information source, identifying and targeting of political dissidents
+- **Example Harms:** Ideology or worldview enforcement through controlled model outputs, propaganda and coordinated information manipulation at scale, surveillance infrastructure deployed against users or dissidents, behavioral data extraction for intelligence or control purposes, models redirecting users to server's chosen products or interests, identifying and targeting of political dissidents
 - **Common Countermeasures:** International treaty frameworks (governments, international bodies), cross-border technical auditing (international bodies, civil society), transparency and whistleblower protections (governments), competing sovereign and open model infrastructure as a structural alternative to state or monopoly control (governments, international bodies)
