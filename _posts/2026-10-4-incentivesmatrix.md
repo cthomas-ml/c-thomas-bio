@@ -17,7 +17,7 @@ The AI Safety Incentives Matrix examines safety through the lens of economic and
 **Key Insights:**
 - Market forces naturally fix product-level safety issues (like accidental errors or user exploits) because they directly threaten user retention and create corporate liability.
 - Corporate alignment fails at societal externalities (like workforce deskilling, economic instability, or intentional data extraction) because these harms either generate revenue or serve as a structural byproduct of the business model.
-- Comprehensive safety efforts require attention across the entire AI Safety Incentives Matrix and a synchronized effort by independent researchers to generate the evidence of unaligned harms, and governance experts to translate that evidence into binding public standards.
+- Comprehensive safety efforts require attention across the entire AI Safety Incentives Matrix and continuous collaboration between independent researchers, who inform public standards, and governance experts, whose evolving mandates actively shape the technical research agenda.
 - Safety interventions involve trade-offs. Mitigating a technical threat can inadvertently amplify a governance risk, eg. restricting information access at the cost of expanding censorship infrastructure.
 - Prioritizing risks is a collaborative exercise. AI experts are needed to estimate the likelihood of a new capability, policy experts to assess how regulatory coverage reduces that likelihood, and economists, epidemiologists, and domain specialists to assess the severity of real-world fallout.
 
@@ -30,43 +30,39 @@ The AI Safety Incentives Matrix examines safety through the lens of economic and
   Cell color indicates likely motivations of server to surface and address harms. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
 </figure>
 
+Mapping the landscape along these boundaries offers a few advantages and observations:
 
-Evaluating safety along financial and strategic boundaries can help with resource prioritization. The following sections analyze where existing research and policy efforts overlap with corporate incentives, and identify gaps where independent oversight is required to secure the broader ecosystem.
+- This framework is insensitive to advances in capability. Chatbots, code assistants, autonomous agents, and eventually embodied AI will have different reach, but the core incentives don't change.
+- Tech creators are naturally motivated to fix harms that threaten user retention or create legal liability. This framework helps independent organizations spot the remaining gaps that the market has no financial interest in solving.
+- Harms move from unaware to intentional with documented public awareness.
+- Trade-offs among interventions emerge. For example, restricting information access to (true) dangerous information may come at the cost of expanding censorship infrastructure.
+
+
+The following sections analyze where existing research and policy efforts overlap with corporate incentives, and identify gaps where independent oversight is required to secure the broader ecosystem.
 
 
 *Note: This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where the profit motive aligns with addressing harms. There are those who believe that open source models are inherently dangerous because a bad actor could remove safety guardrails to enable nefarious use. That actor would either deploy the model, in which case this framework applies, or they would use it internally. Internal use narrows the threat surface, and an actor with the capability and resources to do this meaningfully would not require open source weights as a starting point.*
 
 ## Key research and governance efforts
 
-A significant portion of AI safety efforts are aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the work, but the entire matrix matters. 
+A significant portion of AI safety efforts are aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the work, but the entire matrix matters. Consider some of the largest efforts underway, and where they sit on the matrix. 
 
 <figure style='display: table'>
   <figcaption style='display: table-caption; caption-side: top; font-weight: bold; margin-bottom: 8px;'>
-    Safety Research Areas: Evidence
+    Safety Research Areas: Evidence and Action
   </figcaption>
-  <img src="{{site.baseurl}}/assets/images/HarmAxes-Research.png" alt="Motivations in AI Safety">
+  <img src="{{site.baseurl}}/assets/images/HarmAxes-Efforts.png" alt="Motivations in AI Safety">
 </figure>
 
 
-<figure style='display: table'>
-  <figcaption style='display: table-caption; caption-side: top; font-weight: bold; margin-bottom: 8px;'>
-    Safety Governance Areas: Action
-  </figcaption>
-  <img src="{{site.baseurl}}/assets/images/HarmAxes-Policy.png" alt="Motivations in AI Safety">
-</figure>
+Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. This is a relay race. Independent researchers uncover evidence of harm, and governance forces that evidence into legal obligation. One cannot protect the public without the other.
 
-Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. This is a relay race. Independent researchers uncover the evidence of harm, and governance forces that evidence into legal obligation. One cannot protect the public without the other.
+In the lower region of the matrix, the interaction between governance and research shifts. Mandates around privacy and model sovereignty establish initial boundaries and compliance criteria, driving AI research toward new, trustworthy system architectures.
 
-Key areas for independent researchers and governance experts include:
-- Long-term effects on critical thinking and workforce skills.
-- Concentration of information and infrastructure.
-- Financial exposure from circular investment and large-scale economic instability.
-- Climate and local environmental impact.
-- Deliberate output manipulation and surveillance. 
+Continuous collaboration across governance, policy research, and AI research is vital to combat AI harms. Commercial institutions are motivated primarily by product quality and short-term profitability. Independent bodies must support the most dangerous harms everywhere, and are the only entities who will freely prioritize issues like workforce deskilling, infrastructure consolidation, financial instability, and climate impacts. 
 
+If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work will be overlooked.
 
-
-If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected. 
 
 ---
 
@@ -99,7 +95,7 @@ For these harms, the entity serving the model has direct market incentive and li
 
 ---
 
-### Harms that directly benefit the server (cell 9)
+### Harms that intentionally benefit the server (cell 9)
 
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/Cell9riskmat.png" alt="Risk Prioritization">
