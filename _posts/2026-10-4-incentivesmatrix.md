@@ -55,7 +55,7 @@ A significant portion of AI safety efforts are aligned with internal motivations
 </figure>
 
 
-Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. This is a relay race. Independent researchers uncover evidence of harm, and governance forces that evidence into legal obligation. One cannot protect the public without the other.
+Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. 
 
 In the lower region of the matrix, the interaction between governance and research shifts. Mandates around privacy and model sovereignty establish initial boundaries and compliance criteria, driving AI research toward new, trustworthy system architectures.
 
