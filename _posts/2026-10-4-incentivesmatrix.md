@@ -10,9 +10,9 @@ toc: true
 toc_sticky: true
 ---
 
-We are in a period of unprecedented growth in AI safety. Resources and media attention today disproportionately focus on harms caused by accidental model failures and user-generated exploits. This work is vital, but model creators already possess strong market incentives and liability exposure to solve these problems themselves, leaving a clear opportunity for independent bodies to contribute to broader societal risks.
+We are in a period of unprecedented growth in AI safety, but resources and media attention concentrate heavily on harms caused by accidental model failures and user-generated exploits. Model creators have strong market incentives and liability exposure to manage this vital product work, leaving opportunities for independent bodies to elevate broader societal risks.
 
-The AI Safety Incentives Matrix examines safety through the lens of economic and power motivations of the entity serving the model. Harms are categorized by the server's Awareness at the time of deployment, and the subsequent Benefits (in profit or power) that the server derives from that harm. The model server is typically a private sector actor but may also be a government entity. 
+The AI Safety Incentives Matrix examines safety through the lens of economic and power motivations of the entity serving the model. Harms are categorized by the server's **Awareness** at the time of deployment, and the subsequent **Benefits** (in profit or power) that the server derives from that harm. The model server is typically a private sector actor but may also be a government entity. 
 
 **Key Insights:**
 - Market forces naturally fix product-level safety issues (like accidental errors or user exploits) because they directly threaten user retention and create corporate liability.
@@ -31,10 +31,10 @@ The AI Safety Incentives Matrix examines safety through the lens of economic and
 </figure>
 
 
-
-This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where the profit motive aligns with addressing harms. There are those who believe that open source models are inherently dangerous because a bad actor could remove safety guardrails to enable nefarious use. That actor would either deploy the model, in which case this framework applies, or they would use it internally. Internal use narrows the threat surface considerably, and an actor with the capability and resources to do this meaningfully would not require open source weights.
-
 Evaluating safety along financial and strategic boundaries can help with resource prioritization. The following sections analyze where existing research and policy efforts overlap with corporate incentives, and identify gaps where independent oversight is required to secure the broader ecosystem.
+
+
+*Note: This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where the profit motive aligns with addressing harms. There are those who believe that open source models are inherently dangerous because a bad actor could remove safety guardrails to enable nefarious use. That actor would either deploy the model, in which case this framework applies, or they would use it internally. Internal use narrows the threat surface, and an actor with the capability and resources to do this meaningfully would not require open source weights as a starting point.*
 
 ## Key research and governance efforts
 
