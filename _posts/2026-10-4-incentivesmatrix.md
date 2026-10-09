@@ -10,12 +10,19 @@ toc: true
 toc_sticky: true
 ---
 
+We are in a period of unprecedented growth in AI safety. Resources and media attention today disproportionately focus on harms caused by accidental model failures and user-generated exploits. This work is vital, but model creators already possess strong market incentives and liability exposure to solve these problems themselves, leaving a clear opportunity for independent bodies to contribute to broader societal risks.
+
+The AI Safety Incentives Matrix examines safety through the lens of economic and power motivations of the entity serving the model. Harms are categorized by the server's Awareness at the time of deployment, and the subsequent Benefits (in profit or power) that the server derives from that harm. The model server is typically a private sector actor but may also be a government entity. 
+
+**Key Insights:**
+- Market forces naturally fix product-level safety issues (like accidental errors or user exploits) because they directly threaten user retention and create corporate liability.
+- Corporate alignment fails at societal externalities (like workforce deskilling, economic instability, or intentional data extraction) because these harms either generate revenue or serve as a structural byproduct of the business model.
+- Comprehensive safety efforts require attention across the entire AI Safety Incentives Matrix and a synchronized effort by independent researchers to generate the evidence of unaligned harms, and governance experts to translate that evidence into binding public standards.
+- Safety interventions involve trade-offs. Mitigating a technical threat can inadvertently amplify a governance risk, eg. restricting information access at the cost of expanding censorship infrastructure.
+- Prioritizing risks is a collaborative exercise. AI experts are needed to estimate the likelihood of a new capability, policy experts to assess how regulatory coverage reduces that likelihood, and economists, epidemiologists, and domain specialists to assess the severity of real-world fallout.
 
 
-## Incentives in AI Safety
-
-The Incentives Matrix considers harms resulting from deployment of advanced AI systems from the perspective of the entity earning money from the model, hereafter referred to as the 'server.' The model server is typically a private sector actor but may also be a government entity. 
-
+## The AI Safety Incentives Matrix
 
 <figure style='display: table'>
   <img src="{{site.baseurl}}/assets/images/HarmAxes.png" alt="Motivations in AI Safety">
@@ -23,22 +30,15 @@ The Incentives Matrix considers harms resulting from deployment of advanced AI s
   Cell color indicates likely motivations of server to surface and address harms. More details about actors, example harms, and common mitigations in each cell can be found in the Appendix. </figcaption>
 </figure>
 
-Harms are categorized along two axes. The **Awareness** axis: at the time the model is deployed, does the server know about the specific harm (or could they be reasonably expected to have known)? In the extreme, is the harm directly intended? The **Benefits** axis: once deployed, does the server benefit from the harms? Benefit from the harm means that the specific harm increases profit or power of the server. 
+
 
 This framing assumes that there is an entity serving a model with a motivation (typically profit or power), and highlights where the profit motive aligns with addressing harms. There are those who believe that open source models are inherently dangerous because a bad actor could remove safety guardrails to enable nefarious use. That actor would either deploy the model, in which case this framework applies, or they would use it internally. Internal use narrows the threat surface considerably, and an actor with the capability and resources to do this meaningfully would not require open source weights.
 
+Evaluating safety along financial and strategic boundaries can help with resource prioritization. The following sections analyze where existing research and policy efforts overlap with corporate incentives, and identify gaps where independent oversight is required to secure the broader ecosystem.
 
+## Key research and governance efforts
 
-### Key research and governance efforts
-
-A significant portion of AI safety efforts are aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the work, but the entire matrix matters. Key areas for independent researchers and governance experts include 
-
-- Long-term effects on critical thinking and workforce skills.
-- Concentration of information and infrastructure.
-- Financial exposure from circular investment and large-scale economic instability.
-- Climate and local environmentalal impact.
-- Deliberate output manipulation and surveillance. 
-
+A significant portion of AI safety efforts are aligned with internal motivations of model creators and servers. This makes sense, as they fund a lot of the work, but the entire matrix matters. 
 
 <figure style='display: table'>
   <figcaption style='display: table-caption; caption-side: top; font-weight: bold; margin-bottom: 8px;'>
@@ -55,7 +55,15 @@ A significant portion of AI safety efforts are aligned with internal motivations
   <img src="{{site.baseurl}}/assets/images/HarmAxes-Policy.png" alt="Motivations in AI Safety">
 </figure>
 
-Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. 
+Across the upper rows, researcher benchmarks define what a server could be expected to know, and governance efforts translate expectation to obligation. This is a relay race. Independent researchers uncover the evidence of harm, and governance forces that evidence into legal obligation. One cannot protect the public without the other.
+
+Key areas for independent researchers and governance experts include:
+- Long-term effects on critical thinking and workforce skills.
+- Concentration of information and infrastructure.
+- Financial exposure from circular investment and large-scale economic instability.
+- Climate and local environmental impact.
+- Deliberate output manipulation and surveillance. 
+
 
 
 If the conversation around AI safety is driven primarily by one type of institution, particularly one focused on product quality and profitability, large swaths of vital work may be neglected. 
@@ -121,7 +129,11 @@ The primary counterforces are international coordination, civil society document
 
 ## Conclusion
 
-The risks that receive the most attention and funding today cluster in the upper left corner of the Incentives Matrix. Cells 1 and 2 get the most press and funding, but model training and deploying entities are strongly incentivized to address those harms. There is significant opportunity for independent organizations to make progress elsewhere.
+The risks that receive the most attention and funding today cluster heavily in the upper-left corner of the AI Safety Incentives Matrix. Media and public discourse focus on accidental errors and user-generated exploits, where model-deploying entities are strongly incentivized. 
+
+There are true challenges in the areas where harm is profitable, intentional, or structurally systemic. The opportunity for independent organizations are vital, and require collaboration among researchers building  benchmarks to drag hidden harms into the light, and  governance experts building policy frameworks to translate that awareness into legal obligation. 
+
+By increasing the focus on harms whose solutions are not naturally aligned with corporate interests, and toward funding this critical research-governance alliance, civil society can build the independent, sovereign infrastructure necessary to secure our digital future.
 
 
 
@@ -234,7 +246,7 @@ The model server deliberately causes or enables harm. The benefit accrues as a s
 ### 9. Designed Benefit, Risk or Harm Intended
 *Population-level control*
 
-The model server designed the system to produce harm because the harm is beneficial to them. This applies equally to private companies and governments acting as model servers.
+The model server designed the system to produce harm because the harm is beneficial to them. This applies equally to private companies and governments acting as model servers. The harm drives the business model, so the server will not voluntarily fix it.
 
 - **Actor and beneficiary:** Model server
 - **Harm falls on:** Users with no ability to opt out, those subject to surveillance or targeting, democratic institutions, free information markets
